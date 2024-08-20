@@ -1,0 +1,418 @@
+:root {
+    --main-color: #f1e213;
+    --white: #FFF;
+    --text-color: #FFF;
+    --bg-color: #000;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out; /* Updated transition time */
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    color: var(--main-color);
+}
+
+html {
+    font-size: 63.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    transition: background-color 0.3s ease; /* Added transition for header */
+}
+
+.logo {
+    font-size: 2.5rem; /* Increased font size */
+    color: var(--text-color);
+    font-weight: 600;
+    transition: color 0.3s ease; /* Added transition for logo color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.header .navbar a {
+    font-size: 1.8rem; /* Increased font size */
+    color: var(--text-color);
+    font-weight: 500;
+    margin: 0 1rem;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Added transitions */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+}
+
+.header .navbar a#Home {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+section {
+    padding: 5rem 5%;
+}
+
+.home {
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    animation: fadeIn 2s ease-in-out; /* Added fade-in animation */
+}
+
+.home .content {
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+    opacity: 0;
+    animation: fadeInUp 2s ease-in-out 0.5s forwards; /* Added fade-in-up animation */
+}
+
+.home .content h1 {
+    font-size: 5rem; /* Increased font size */
+    color: var(--text-color);
+    animation: textFadeIn 2s ease-out; /* Added text fade-in animation */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+}
+
+.home .content h1 span {
+    color: var(--main-color);
+}
+
+.home .content h3 {
+    font-size: 3rem; /* Increased font size */
+    color: var(--text-color);
+    animation: textFadeIn 2s ease-out 0.5s; /* Added text fade-in animation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+}
+
+.home .content p {
+    color: var(--text-color);
+    font-size: 1.5rem; /* Increased font size */
+    line-height: 1.5;
+    width: 50rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    transition: color 0.3s ease; /* Added transition for paragraph color */
+}
+
+.home .content .flex-btn {
+    display: inline-block;
+    animation: buttonFadeIn 2s ease-out 1s forwards; /* Added button fade-in animation */
+}
+
+.home .content .flex-btn .btn {
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: .2rem solid var(--main-color);
+    border-radius: 3rem;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
+}
+
+.home .content .flex-btn .btn.hire {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+}
+
+.home .content .flex-btn .btn:hover {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    box-shadow: .1rem .5rem 1rem var(--main-color);
+}
+
+.home .content .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    animation: iconFadeIn 2s ease-out 1.5s forwards; /* Added icon fade-in animation */
+}
+
+.home .content .icons i {
+    color: var(--main-color);
+    font-size: 2rem;
+    border: .2rem solid var(--main-color);
+    padding: 1rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
+}
+
+.home .content .icons i:hover {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    box-shadow: .1rem .5rem 1rem var(--main-color);
+}
+
+.home img {
+    border-radius: 50%;
+    height: 42rem;
+    width: 42rem;
+    object-fit: cover;
+    box-shadow: 0 0 2.5rem var(--main-color);
+    transition: box-shadow 0.3s ease; /* Added transition for image box-shadow */
+}
+
+.home img:hover {
+    box-shadow: 0 0 2.5rem var(--main-color),
+        0 0 5rem var(--main-color),
+        0 0 10rem var(--main-color);
+}
+
+.text-animation {
+    font-size: 2.5rem; /* Increased font size */
+    color: var(--text-color);
+    min-width: 28rem;
+    font-weight: 600;
+    animation: textAnimation 5s steps(4, end) infinite; /* Added text animation */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+}
+
+.text-animation span {
+    position: relative;
+}
+
+.text-animation span::before {
+    content: "washroom cleaner";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+.text-animation span::after {
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid var(--main-color);
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "CAD Services";
+    }
+    21%, 40% {
+        content: "2D Drafting";
+    }
+    41%, 60% {
+        content: "CAD Services";
+    }
+    61%, 80% {
+        content: "2D Drafting";
+    }
+    81%, 100% {
+        content: "CAD Services";
+    }
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 8px);
+    }
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes iconFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:990px) {
+    html {
+        font-size: 55.5%;
+    }
+
+    .home {
+        flex-flow: column-reverse;
+        padding: 8rem 0;
+        padding-top: 15rem;
+    }
+}
+
+@media(max-width:700px) {
+    html {
+        font-size: 50.5%;
+    }
+
+    .home img {
+        height: 35rem;
+        width: 35rem;
+        margin-top: 0rem;
+    }
+
+    .home {
+        padding: 4rem 0;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .header {
+        position: relative;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .logo {
+        margin: 10px 20px;
+        font-size: 3rem;
+    }
+
+    .header .navbar a {
+        font-size: 1.5rem;
+    }
+
+    .menu i {
+        display: flex;
+    }
+
+    .header .navbar.active {
+        display: grid;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 7rem;
+        display: none;
+        text-align: center;
+        justify-content: center;
+        background-color: var(--main-color);
+        width: 100%;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .header .navbar a#Home {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+
+    .header .navbar a {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .header .navbar a:hover,
+    .header .navbar a#Home:hover {
+        background-color: var(--white);
+        color: var(--main-color);
+        text-decoration: none;
+    }
+}
+
+@media(max-width:450px) {
+    .home .content p {
+        width: 35rem;
+    }
+}
