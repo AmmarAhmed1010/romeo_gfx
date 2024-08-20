@@ -29,7 +29,7 @@ const LandingPage = () => {
           I am Romeo GFX, a passionate and dedicated graphic designer from Pakistan with over three years of experience in the field. My expertise lies in creating compelling YouTube thumbnails that not only capture attention but also encourage viewers to engage with the content. Whether you are a YouTuber or a business owner, my goal is to elevate your visual presence and bring your ideas to life with creative and impactful designs.
           </p>
           <div className="icons">
-            <a href="https://www.instagram.com/complex_cad/?igsh=M29jdmVkYWR5cHdy">
+            <a href="https://www.instagram.com/romeo_gfx_/">
               <i className="fab fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
@@ -43,7 +43,7 @@ const LandingPage = () => {
           </div>
         </div>
         <Image
-          src="/profile.png"
+          src="/imgprofile.png"
           alt="Profile Image"
           className="img"
           width={720}
