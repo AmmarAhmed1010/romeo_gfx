@@ -36,12 +36,12 @@ const LandingPage = () => {
             </a>
           </div>
           <div className="flex-btn">
-            <a href="#" className="btn hire">
+            <a href="https://www.instagram.com/romeo_gfx_/" className="btn hire">
               Hire Me
             </a>
-            <a href="#" className="btn">
-              Contact
-            </a>
+            <div className="contact-info">
+              <p>Contact: 0315 8552233</p>
+            </div>
           </div>
         </div>
         <Image

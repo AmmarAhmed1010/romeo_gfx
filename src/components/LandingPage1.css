@@ -135,7 +135,10 @@ section {
 }
 
 .home .content .flex-btn {
-    display: inline-block;
+    display:flex; /* Change to inline-flex to align items horizontally */
+    align-items: center;
+    justify-content: center; /* Vertically center items */
+    gap: 1rem; /* Adjust gap between buttons and contact info */
     animation: buttonFadeIn 2s ease-out 1s forwards;
 }
 
@@ -163,26 +166,23 @@ section {
     box-shadow: .1rem .5rem 1rem var(--main-color);
 }
 
-.home .content .icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    animation: iconFadeIn 2s ease-out 1.5s forwards;
-}
-
-.home .content .icons i {
-    color: var(--main-color);
-    font-size: 2rem;
+.contact-info {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
     border: .2rem solid var(--main-color);
-    padding: 1rem;
-    border-radius: 50%;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 3rem;
 }
 
-.home .content .icons i:hover {
-    cursor: pointer;
+.contact-info p {
+    margin: 0;
+}
+
+.contact-info:hover {
     background-color: var(--main-color);
     color: var(--text-color);
     box-shadow: .1rem .5rem 1rem var(--main-color);
@@ -359,6 +359,16 @@ section {
     .home img {
         height: 35rem;
         width: 35rem;
+    }
+
+    .flex-btn {
+        flex-flow: row; /* Stack buttons and contact info vertically on small screens */
+        gap: 1rem; /* Adjust gap for small screens */
+    }
+
+    .contact-info {
+        font-size: 1.2rem; /* Adjust font size for small screens */
+        padding: 0.5rem 1rem;
     }
 
     .home .content {
