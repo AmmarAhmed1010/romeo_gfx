@@ -1,5 +1,5 @@
 :root {
-    --main-color: #f1e213;
+    --main-color: #f11313;
     --white: #FFF;
     --text-color: #FFF;
     --bg-color: #000;
@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
-    transition: all .3s ease-in-out; /* Updated transition time */
+    transition: all .3s ease-in-out;
     text-decoration: none;
 }
 
@@ -46,15 +46,15 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 5%;
-    transition: background-color 0.3s ease; /* Added transition for header */
+    transition: background-color 0.3s ease;
 }
 
 .logo {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
-    transition: color 0.3s ease; /* Added transition for logo color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .logo span {
@@ -62,12 +62,12 @@ body {
 }
 
 .header .navbar a {
-    font-size: 1.8rem; /* Increased font size */
+    font-size: 1.8rem;
     color: var(--text-color);
     font-weight: 500;
     margin: 0 1rem;
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Added transitions */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .header .navbar a#Home {
@@ -90,7 +90,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    animation: fadeIn 2s ease-in-out; /* Added fade-in animation */
+    animation: fadeIn 2s ease-in-out;
 }
 
 .home .content {
@@ -100,14 +100,14 @@ section {
     justify-content: center;
     gap: 1rem;
     opacity: 0;
-    animation: fadeInUp 2s ease-in-out 0.5s forwards; /* Added fade-in-up animation */
+    animation: fadeInUp 2s ease-in-out 0.5s forwards;
 }
 
 .home .content h1 {
-    font-size: 5rem; /* Increased font size */
+    font-size: 5rem;
     color: var(--text-color);
-    animation: textFadeIn 2s ease-out; /* Added text fade-in animation */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    animation: textFadeIn 2s ease-out;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 .home .content h1 span {
@@ -115,25 +115,25 @@ section {
 }
 
 .home .content h3 {
-    font-size: 3rem; /* Increased font size */
+    font-size: 3rem;
     color: var(--text-color);
-    animation: textFadeIn 2s ease-out 0.5s; /* Added text fade-in animation */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    animation: textFadeIn 2s ease-out 0.5s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .home .content p {
     color: var(--text-color);
-    font-size: 1.5rem; /* Increased font size */
+    font-size: 1.5rem;
     line-height: 1.5;
     width: 50rem;
     margin-bottom: 1rem;
     text-align: left;
-    transition: color 0.3s ease; /* Added transition for paragraph color */
+    transition: color 0.3s ease;
 }
 
 .home .content .flex-btn {
     display: inline-block;
-    animation: buttonFadeIn 2s ease-out 1s forwards; /* Added button fade-in animation */
+    animation: buttonFadeIn 2s ease-out 1s forwards;
 }
 
 .home .content .flex-btn .btn {
@@ -144,7 +144,7 @@ section {
     font-weight: 500;
     border: .2rem solid var(--main-color);
     border-radius: 3rem;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home .content .flex-btn .btn.hire {
@@ -166,7 +166,7 @@ section {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
-    animation: iconFadeIn 2s ease-out 1.5s forwards; /* Added icon fade-in animation */
+    animation: iconFadeIn 2s ease-out 1.5s forwards;
 }
 
 .home .content .icons i {
@@ -175,7 +175,7 @@ section {
     border: .2rem solid var(--main-color);
     padding: 1rem;
     border-radius: 50%;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home .content .icons i:hover {
@@ -191,7 +191,7 @@ section {
     width: 42rem;
     object-fit: cover;
     box-shadow: 0 0 2.5rem var(--main-color);
-    transition: box-shadow 0.3s ease; /* Added transition for image box-shadow */
+    transition: box-shadow 0.3s ease;
 }
 
 .home img:hover {
@@ -201,12 +201,12 @@ section {
 }
 
 .text-animation {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem;
     color: var(--text-color);
     min-width: 28rem;
     font-weight: 600;
-    animation: textAnimation 5s steps(4, end) infinite; /* Added text animation */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    animation: textAnimation 5s steps(4, end) infinite;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .text-animation span {
@@ -237,28 +237,28 @@ section {
 }
 
 @keyframes words {
-    0%, 20% {
+    0%, 19.99% {
         content: "Graphic Designing";
     }
-    21%, 40% {
+    20%, 39.99% {
         content: "Animations";
     }
-    41%, 60% {
+    40%, 59.99% {
         content: "Graphic Designing";
     }
-    61%, 80% {
+    60%, 79.99% {
         content: "Animations";
     }
-    81%, 100% {
+    80%, 100% {
         content: "Graphic Designing";
     }
 }
 
 @keyframes typing {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    0%, 19.99%, 40%, 59.99%, 80%, 100% {
         width: 0;
     }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+    5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
         width: calc(100% + 8px);
     }
 }
@@ -341,78 +341,39 @@ section {
 
 @media(max-width:700px) {
     html {
-        font-size: 50.5%;
-    }
-
-    .home img {
-        height: 35rem;
-        width: 35rem;
-        margin-top: 0rem;
-    }
-
-    .home {
-        padding: 4rem 0;
-    }
-
-    section {
-        padding: 1rem;
+        font-size: 50%;
     }
 
     .header {
-        position: relative;
-        padding: 0;
-        margin-bottom: 1rem;
-    }
-
-    .logo {
-        margin: 10px 20px;
-        font-size: 3rem;
+        flex-flow: column;
     }
 
     .header .navbar a {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        margin: 1rem 0;
     }
 
-    .menu i {
-        display: flex;
-    }
-
-    .header .navbar.active {
-        display: grid;
-    }
-
-    .header .navbar {
-        position: absolute;
-        top: 7rem;
-        display: none;
-        text-align: center;
-        justify-content: center;
-        background-color: var(--main-color);
-        width: 100%;
-        gap: 2rem;
-        padding: 1rem;
-    }
-
-    .header .navbar a#Home {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .header .navbar a {
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .header .navbar a:hover,
-    .header .navbar a#Home:hover {
-        background-color: var(--white);
-        color: var(--main-color);
-        text-decoration: none;
+    .home img {
+        height: 30rem;
+        width: 30rem;
     }
 }
 
-@media(max-width:450px) {
-    .home .content p {
-        width: 35rem;
+@media(max-width:520px) {
+    html {
+        font-size: 45%;
+    }
+
+    .header {
+        padding: 2rem 2%;
+    }
+
+    .home img {
+        height: 25rem;
+        width: 25rem;
+    }
+
+    .home .content {
+        padding: 1rem 2%;
     }
 }
