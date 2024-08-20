@@ -12,11 +12,11 @@ const LandingPage = () => {
         <div className="menu">
           <i className="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <nav className="navbar">
+        {/* <nav className="navbar">
           <a href="#Home">Home</a>
-        </nav>
+        </nav> */}
       </header>
-
+      
       <section className="home" id="Home">
         <div className="content">
           <h1>
