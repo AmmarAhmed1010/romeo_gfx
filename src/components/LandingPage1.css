@@ -238,19 +238,19 @@ section {
 
 @keyframes words {
     0%, 20% {
-        content: "CAD Services";
+        content: "Graphic Designing";
     }
     21%, 40% {
-        content: "2D Drafting";
+        content: "Animations";
     }
     41%, 60% {
-        content: "CAD Services";
+        content: "Graphic Designing";
     }
     61%, 80% {
-        content: "2D Drafting";
+        content: "Animations";
     }
     81%, 100% {
-        content: "CAD Services";
+        content: "Graphic Designing";
     }
 }
 

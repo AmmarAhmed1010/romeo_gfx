@@ -7,7 +7,7 @@ const LandingPage = () => {
     <div className='bg-black'>
       <header className="header">
         <a href="#" className="logo">
-          Complex <span>Cad</span>
+          Romeo <span> GFX</span>
         </a>
         <div className="menu">
           <i className="fa fa-bars" aria-hidden="true"></i>
@@ -20,14 +20,13 @@ const LandingPage = () => {
       <section className="home" id="Home">
         <div className="content">
           <h1>
-            I am <span>Hasham Rana</span>
+            I am <span>Romeo GFX</span>
           </h1>
           <h3 className="text-animation">
             I specialize in <span></span>
           </h3>
           <p>
-            With expertise in 2D Civil Map Making, Draft Creation, and the transformation of sketches or paper maps into precise digital drafts,
-            I offer comprehensive AutoCAD services for architectural and civil engineering projects.
+          I am Romeo GFX, a passionate and dedicated graphic designer from Pakistan with over three years of experience in the field. My expertise lies in creating compelling YouTube thumbnails that not only capture attention but also encourage viewers to engage with the content. Whether you are a YouTuber or a business owner, my goal is to elevate your visual presence and bring your ideas to life with creative and impactful designs.
           </p>
           <div className="icons">
             <a href="https://www.instagram.com/complex_cad/?igsh=M29jdmVkYWR5cHdy">
