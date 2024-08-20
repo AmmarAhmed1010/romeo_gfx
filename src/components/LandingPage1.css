@@ -353,6 +353,7 @@ section {
 
     .header {
         padding: 2rem 2%;
+        margin-bottom: 0;
     }
 
     .home img {
