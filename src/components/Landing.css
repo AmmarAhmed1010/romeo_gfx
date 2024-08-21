@@ -258,19 +258,19 @@ section {
 
 @keyframes words {
     0%, 20% {
-        content: "ANIMATION";
+        content: "DESIGNING";
     }
     21%, 40% {
         content: "GRAPHICS";
     }
     41%, 60% {
-        content: "ANIMATION";
+        content: "DESIGNING";
     }
     61%, 80% {
         content: "GRAPHICS";
     }
     81%, 100% {
-        content: "ANIMATION";
+        content: "DESIGNING";
     }
 }
 
@@ -382,6 +382,7 @@ section {
         position: relative;
         padding: 0;
         margin-bottom: 1rem;
+       
     }
     .header {
         padding: 1rem 2%;
@@ -471,4 +472,9 @@ section {
     .home .content{
         padding: 0 4%;
     }
+    .header  {
+        display: flex;
+       justify-content: center;
+    }
+
 }
