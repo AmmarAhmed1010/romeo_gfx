@@ -7,7 +7,7 @@ const Landing = () => {
         <div className='bg-black'>
           <header className="header">
             <a href="#" className="logo">
-              Romeo<span>GFX</span>
+              Romeo<span className='text-animation'>GFX</span>
             </a>
             <div className="menu">
               <i className="fa fa-bars" aria-hidden="true"></i>
@@ -37,7 +37,7 @@ const Landing = () => {
                 <a href="https://www.instagram.com/romeo_gfx_/" className="btn hire">
                   Hire Me
                 </a>
-                <a className="btn ml-3">
+                <a className="btn text-white ml-3">
                   Contact: 0315 8552233
                 </a>
               </div>
