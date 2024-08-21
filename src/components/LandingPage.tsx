@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import './LandingPage1.css';
+import './Landing.css';
 
 const LandingPage = () => {
   return (
