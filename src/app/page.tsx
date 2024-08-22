@@ -5,9 +5,9 @@ import MultipleCards from "@/components/MultipleCards";
 export default function Home() {
   return (
     <>
-     <Landing/>
-    <MultipleCards/>
-     <Cards3/>
+      <Landing />
+      <MultipleCards />
+      {/* <Cards3/> */}
     </>
   );
 }

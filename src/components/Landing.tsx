@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from "next/image";
 import './Landing.css';
-
 const Landing = () => {
     return (
         <div className='bg-black'>
@@ -50,6 +49,7 @@ const Landing = () => {
               height={720}
             />
           </section>
+         
         </div>
       );
 }
