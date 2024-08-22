@@ -9,7 +9,7 @@ const MultipleCards = () => {
   ));
 
   return (
-    <section className="w-full h-full">
+    <section className="w-full bg-black h-full">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-red-700 font-sans mb-8">
           Explore My Media Collection
