@@ -212,17 +212,17 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="max-w-5xl mx-auto bg-white dark:bg-neutral-900 h-fit  z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
+              className="max-w-5xl mx-auto bg-red-800  h-fit  z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
             >
               <button
-                className="sticky top-[50px] h-10 w-10 p-2 right-0 ml-auto bg-black dark:bg-white rounded-full flex items-center justify-center"
+                className="sticky top-[50px] h-10 w-10 p-2 right-0 ml-auto bg-black  rounded-full flex items-center justify-center"
                 onClick={handleClose}
               >
                 <IconX className="h-10 w-10 text-neutral-100 dark:text-neutral-900" />
               </button>
               <motion.p
                 layoutId={layout ? `category-${card.title}` : undefined}
-                className="font-large text-5xl font-bold text-black"
+                className="font-large text-5xl font-bold text-white"
               >
                 {card.category}
               </motion.p>
