@@ -36,7 +36,7 @@ body {
 }
 
 .header {
-    
+
     position: relative;
     top: 0;
     left: 0;
@@ -358,7 +358,6 @@ section {
         padding-top: 15rem;
     }
 }
-
 @media(max-width:700px) {
     html {
         font-size: 50.5%;
@@ -382,18 +381,17 @@ section {
         position: relative;
         padding: 0;
         margin-bottom: 1rem;
-       
     }
+
     .header {
         padding: 1rem 2%;
-        top: 0; /* Ensure the sticky behavior on mobile */
-        position: -webkit-sticky; /* For Safari */
-        position: sticky;
+        top: 0;
     }
 
     .header .navbar {
-        position: relative; /* Maintain sticky navbar in mobile */
-        top: 7rem; /* Adjust according to the height of the header on mobile */
+        /* Remove sticky positioning */
+        position: relative; /* Updated to relative */
+        top: 0; /* Reset top to 0 */
         display: none;
         text-align: center;
         justify-content: center;
@@ -401,7 +399,6 @@ section {
         width: 100%;
         gap: 2rem;
         padding: 1rem;
-        background: none;
     }
 
     .header .navbar.active {
@@ -419,6 +416,7 @@ section {
         color: var(--main-color);
         text-decoration: none;
     }
+
     .logo {
         margin: 10px 20px;
         font-size: 3rem;
@@ -437,8 +435,8 @@ section {
     }
 
     .header .navbar {
-        position: absolute;
-        top: 7rem;
+        position: relative; /* Make sure to keep this relative */
+        top: 0; /* Adjust according to your design */
         display: none;
         text-align: center;
         justify-content: center;
@@ -451,11 +449,6 @@ section {
     .header .navbar a#Home {
         color: var(--text-color);
         text-decoration: none;
-    }
-
-    .header .navbar a {
-        width: 100%;
-        padding: 1rem;
     }
 
     .header .navbar a:hover,

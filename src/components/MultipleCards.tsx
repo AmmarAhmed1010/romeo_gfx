@@ -28,7 +28,7 @@ const DummyContent1 = () => {
                     Discover the power of AI
                 </span>{" "}
                 AI is revolutionizing the way we interact   </p>
-            <div className="flex gap-2  my-2 flex-col">
+            <div className="flex gap-9 my-5 flex-col">
                 <Image
                     src="/imgprofile.png"
                     alt="AI illustration"
