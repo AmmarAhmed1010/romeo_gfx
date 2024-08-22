@@ -81,11 +81,11 @@ const DummyContent4 = () => {
   return (
     <div className="bg-black p-8 md:p-14 rounded-3xl mb-4">
       <div className="flex gap-9 my-5 flex-col">
-        {[...Array(15)].map((_, index) => (
-          <Image
+        {[...Array(9)].map((_, index) => (
+          <video
             key={index}
-            src={`/gaming${index + 1}.png`}
-            alt={`Gaming illustration ${index + 1}`}
+            src={`/vid${index + 1}.mp4`}
+            controls
             height="500"
             width="500"
             className="md:w-1/2 md:h-1/2 rounded-xl h-full w-full mx-auto object-contain"
@@ -118,7 +118,7 @@ const data = [
   {
     category: "Overlay",
     title: "Click to see more",
-    src: "/img1.png",
+    src: "/logo6.png",
     content: <DummyContent4 />,
   },
 ];
