@@ -6,20 +6,23 @@ const PricingPlan = () => {
       title: "Basic Plan",
       price: "Rs: 1500",
       features: ["2 HD Thumbnail", "1 Logo", "1 Banner", "1 Non Animated Overlay"],
+      message: "I am interested in the Basic Plan. Could you provide more details?"
     },
     {
       title: "Standard Plan",
       price: "Rs: 2300",
       features: ["2 HD Thumbnail", "1 Logo", "1 Banner", "1 Professional Animated Overlay"],
+      message: "I am interested in the Standard Plan. Could you provide more details?"
     },
     {
       title: "Premium Plan",
       price: "Rs: 2800",
       features: ["3 HD Thumbnail", "1 Logo", "1 Banner", "1 Professional Animated Overlay"],
+      message: "I am interested in the Premium Plan. Could you provide more details?"
     },
   ];
 
-  const whatsappNumber = '03184424513'; // Replace with your WhatsApp number
+  const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
 
   return (
     <section className="w-full h-full py-20 bg-black">
@@ -47,7 +50,7 @@ const PricingPlan = () => {
                 ))}
               </ul>
               <a
-                href={`https://wa.me/${whatsappNumber}`}
+                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(plan.message)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition transform hover:scale-105 inline-block text-center"
