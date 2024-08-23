@@ -19,6 +19,8 @@ const PricingPlan = () => {
     },
   ];
 
+  const whatsappNumber = '03184424513'; // Replace with your WhatsApp number
+
   return (
     <section className="w-full h-full py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4">
@@ -44,9 +46,14 @@ const PricingPlan = () => {
                   </li>
                 ))}
               </ul>
-              <button className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition transform hover:scale-105">
+              <a
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition transform hover:scale-105 inline-block text-center"
+              >
                 Choose Plan
-              </button>
+              </a>
             </div>
           ))}
         </div>

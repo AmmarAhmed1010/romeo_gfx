@@ -119,7 +119,7 @@ const data = [
   {
     category: "Overlay",
     title: "Click to see more",
-    src: "/logo6.png",
+    src: "/over.png",
     content: <DummyContent4 />,
   },
 ];
