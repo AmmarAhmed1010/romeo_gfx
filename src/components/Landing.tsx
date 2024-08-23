@@ -4,7 +4,7 @@ import './Landing.css';
 
 const Landing = () => {
   const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
-  const contactMessage = "Hello, I'm interested in your services. Could you provide more details?";
+  const contactMessage = "Hello, I'm interested in your services.";
 
   return (
     <div>
