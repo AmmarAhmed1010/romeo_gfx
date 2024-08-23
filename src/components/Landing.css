@@ -11,7 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
-    transition: all .3s ease-in-out; /* Updated transition time */
+    transition: all .3s ease-in-out;
     text-decoration: none;
 }
 
@@ -30,13 +30,11 @@
 html {
     font-size: 63.5%;
 }
-
 body {
     background-color: var(--bg-color);
 }
 
 .header {
-
     position: relative;
     top: 0;
     left: 0;
@@ -47,14 +45,15 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 5%;
-    transition: background-color 0.3s ease; /* Added transition for header */
+    transition: background-color 0.3s ease;
 }
+
 .logo {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
-    transition: color 0.3s ease; /* Added transition for logo color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .logo span {
@@ -62,12 +61,12 @@ body {
 }
 
 .header .navbar a {
-    font-size: 1.8rem; /* Increased font size */
+    font-size: 1.8rem;
     color: var(--text-color);
     font-weight: 500;
     margin: 0 1rem;
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Added transitions */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .header .navbar a#Home {
@@ -79,6 +78,7 @@ body {
     color: var(--main-color);
     text-decoration: underline;
 }
+
 .services {
     min-height: 100vh;
     display: flex;
@@ -86,13 +86,14 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .home {
     min-height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    animation: fadeIn 2s ease-in-out; /* Added fade-in animation */
+    animation: fadeIn 2s ease-in-out;
 }
 
 .home .content {
@@ -102,40 +103,42 @@ body {
     justify-content: center;
     gap: 1rem;
     opacity: 0;
-    animation: fadeInUp 2s ease-in-out 0.5s forwards; /* Added fade-in-up animation */
+    animation: fadeInUp 2s ease-in-out 0.5s forwards;
 }
 
 .home .content h1 {
-    font-size: 5rem; /* Increased font size */
+    font-size: 5rem;
     color: var(--text-color);
-    animation: textFadeIn 2s ease-out; /* Added text fade-in animation */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    animation: textFadeIn 2s ease-out;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
 .home .content h1 span {
     color: var(--main-color);
+    display: inline-block;
+    animation: zoomRotate 4s infinite ease-in-out;
 }
 
 .home .content h3 {
-    font-size: 3rem; /* Increased font size */
+    font-size: 3rem;
     color: var(--text-color);
-    animation: textFadeIn 2s ease-out 0.5s; /* Added text fade-in animation */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    animation: textFadeIn 2s ease-out 0.5s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .home .content p {
     color: var(--text-color);
-    font-size: 1.5rem; /* Increased font size */
+    font-size: 1.5rem;
     line-height: 1.5;
     width: 50rem;
     margin-bottom: 1rem;
     text-align: left;
-    transition: color 0.3s ease; /* Added transition for paragraph color */
+    transition: color 0.3s ease;
 }
 
 .home .content .flex-btn {
     display: inline-block;
-    animation: buttonFadeIn 2s ease-out 1s forwards; /* Added button fade-in animation */
+    animation: buttonFadeIn 2s ease-out 1s forwards;
 }
 
 .home .content .flex-btn .btn {
@@ -146,7 +149,7 @@ body {
     font-weight: 500;
     border: .2rem solid var(--main-color);
     border-radius: 3rem;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home .content .flex-btn .btn.hire {
@@ -168,7 +171,7 @@ body {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
-    animation: iconFadeIn 2s ease-out 1.5s forwards; /* Added icon fade-in animation */
+    animation: iconFadeIn 2s ease-out 1.5s forwards;
 }
 
 .home .content .icons i {
@@ -177,7 +180,7 @@ body {
     border: .2rem solid var(--main-color);
     padding: 1rem;
     border-radius: 50%;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home .content .icons i:hover {
@@ -193,7 +196,7 @@ body {
     width: 42rem;
     object-fit: cover;
     box-shadow: 0 0 2.5rem var(--main-color);
-    transition: box-shadow 0.3s ease; /* Added transition for image box-shadow */
+    transition: box-shadow 0.3s ease;
 }
 
 .home img:hover {
@@ -203,12 +206,12 @@ body {
 }
 
 .text-animation {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem;
     color: var(--text-color);
     min-width: 28rem;
     font-weight: 600;
-    animation: textAnimation 5s steps(4, end) infinite; /* Added text animation */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    animation: textAnimation 5s steps(4, end) infinite;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .text-animation span {
@@ -231,10 +234,6 @@ body {
     right: -8px;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
-.content h1 span {
-    display: inline-block;
-    animation: zoomRotate 4s infinite ease-in-out;
-}
 
 @keyframes zoomRotate {
     0%, 100% {
@@ -250,7 +249,6 @@ body {
         transform: scale(1.1) rotate(-3deg);
     }
 }
-
 
 @keyframes cursor {
     to {
@@ -349,128 +347,75 @@ body {
     }
 }
 
-@media(max-width:990px) {
-    html {
-        font-size: 55.5%;
-    }
-
-    .home {
-        flex-flow: column-reverse;
-        padding: 8rem 0;
-        padding-top: 15rem;
-    }
-}
-@media(max-width:700px) {
-    html {
-        font-size: 50.5%;
-    }
-
-    .home img {
-        height: 35rem;
-        width: 35rem;
-        margin-top: 0rem;
-    }
-
-    .home {
-        padding: 4rem 0;
-    }
-
-    section {
-        padding: 1rem;
-    }
-
-    .header {
-        position: relative;
-        padding: 0;
-        margin-bottom: 1rem;
-    }
-
-    .header {
-        padding: 1rem 2%;
-        top: 0;
-    }
-
-    .header .navbar {
-        /* Remove sticky positioning */
-        position: relative; /* Updated to relative */
-        top: 0; /* Reset top to 0 */
-        display: none;
-        text-align: center;
-        justify-content: center;
-        background-color: var(--main-color);
-        width: 100%;
-        gap: 2rem;
-        padding: 1rem;
-    }
-
-    .header .navbar.active {
-        display: grid;
-    }
-
-    .header .navbar a {
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .header .navbar a:hover,
-    .header .navbar a#Home:hover {
-        background-color: var(--white);
-        color: var(--main-color);
-        text-decoration: none;
-    }
-
-    .logo {
-        margin: 10px 20px;
-        font-size: 3rem;
-    }
-
-    .header .navbar a {
-        font-size: 1.5rem;
-    }
-
-    .menu i {
-        display: flex;
-    }
-
-    .header .navbar.active {
-        display: grid;
-    }
-
-    .header .navbar {
-        position: relative; /* Make sure to keep this relative */
-        top: 0; /* Adjust according to your design */
-        display: none;
-        text-align: center;
-        justify-content: center;
-        background-color: var(--main-color);
-        width: 100%;
-        gap: 2rem;
-        padding: 1rem;
-    }
-
-    .header .navbar a#Home {
-        color: var(--text-color);
-        text-decoration: none;
-    }
-
-    .header .navbar a:hover,
-    .header .navbar a#Home:hover {
-        background-color: var(--white);
-        color: var(--main-color);
-        text-decoration: none;
-    }
+/* Additional Styles for Component Width */
+section {
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
-@media(max-width:450px) {
+.container-class {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.component-class {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
     .home .content p {
-        width: 35rem;
+        width: 90%;
     }
-    .home .content{
-        padding: 0 4%;
+    .home img {
+        width: 30rem;
+        height: 30rem;
     }
-    .header  {
-        display: flex;
-       justify-content: center;
-    }
+}
 
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 2rem 3rem;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .home .content {
+        align-items: center;
+        text-align: center;
+    }
+    .home .content p {
+        width: 100%;
+    }
+    .home img {
+        width: 25rem;
+        height: 25rem;
+    }
+    .header .navbar a {
+        font-size: 1.6rem;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .home img {
+        width: 20rem;
+        height: 20rem;
+    }
+    .home .content h1 {
+        font-size: 3.5rem;
+    }
+    .home .content h3 {
+        font-size: 2.5rem;
+    }
+    .home .content p {
+        font-size: 1.2rem;
+    }
+    .text-animation {
+        font-size: 2rem;
+        min-width: 20rem;
+    }
 }
