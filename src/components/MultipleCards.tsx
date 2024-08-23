@@ -10,8 +10,8 @@ const MultipleCards = () => {
 
   return (
     <section className="w-ful bg-black h-full">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-5xl sm:text-3xl md:text-5xl font-bold text-red-600 font-sans mb-8">
+      <div className="max-w-7xl px-3">
+        <h2 className="text-3xl sm:text-3xl md:text-5xl px-4 font-bold text-red-600 font-sans mb-2">
           <span className="text-white">Explore</span> My <span className="text-white">Media</span> Collection
         </h2>
         <Carousel items={cards} />

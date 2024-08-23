@@ -3,8 +3,8 @@ import React from 'react';
 const PricingSection = () => {
   return (
     <section className="w-full h-full py-20 bg-black">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl sm:text-3xl md:text-5xl font-bold text-white font-sans mb-12 text-center">
+      <div className="max-w-6xl mx-auto px-4"> {/* Reduced max-width from 7xl to 6xl */}
+        <h2 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white font-sans mb-12 text-center">
           Our <span className='text-red-700'>Price</span> List
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -20,7 +20,7 @@ const PricingSection = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-red-800 p-8 rounded-3xl shadow-lg text-center transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-red-700"
+              className="bg-red-800 p-4 rounded-3xl shadow-lg text-center transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-red-700"
               style={{ transitionDelay: `${item.delay}ms` }}
             >
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white mb-4 transition-transform duration-300 ease-in-out transform hover:translate-x-1 hover:translate-y-1">
