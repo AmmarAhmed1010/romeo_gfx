@@ -28,11 +28,12 @@
 }
 
 html {
-    font-size: 63.5%;
+    font-size: 60%;
 }
 
 body {
     background-color: var(--bg-color);
+    
 }
 
 .header {
@@ -201,7 +202,6 @@ body {
         0 0 5rem var(--main-color),
         0 0 10rem var(--main-color);
 }
-
 .text-animation {
     font-size: 2.5rem; /* Increased font size */
     color: var(--text-color);
@@ -378,6 +378,7 @@ body {
     section {
         padding: 1rem;
     }
+    
 
     .header {
         position: relative;
