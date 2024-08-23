@@ -22,8 +22,8 @@ const PricingPlan = () => {
       return (
         <section className="w-full h-full py-20 bg-black">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-red-700 text-center mb-12">
-              Our Pricing Plans
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white text-center mb-12">
+              Our <span className='text-red-700'>Pricing</span> Plans
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {pricingPlans.map((plan, index) => (
