@@ -11,7 +11,8 @@
     padding: 0;
     box-sizing: border-box;
     text-transform: capitalize;
-    transition: all .3s ease-in-out; /* Updated transition time */
+    transition: all .3s ease-in-out;
+    /* Updated transition time */
     text-decoration: none;
 }
 
@@ -28,12 +29,12 @@
 }
 
 html {
-    font-size: 60%;
+    font-size: 63.5%;
 }
 
 body {
     background-color: var(--bg-color);
-    
+
 }
 
 .header {
@@ -48,14 +49,19 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 5%;
-    transition: background-color 0.3s ease; /* Added transition for header */
+    transition: background-color 0.3s ease;
+    /* Added transition for header */
 }
+
 .logo {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem;
+    /* Increased font size */
     color: var(--text-color);
     font-weight: 600;
-    transition: color 0.3s ease; /* Added transition for logo color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    transition: color 0.3s ease;
+    /* Added transition for logo color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Added text shadow for 3D effect */
 }
 
 .logo span {
@@ -63,12 +69,15 @@ body {
 }
 
 .header .navbar a {
-    font-size: 1.8rem; /* Increased font size */
+    font-size: 1.8rem;
+    /* Increased font size */
     color: var(--text-color);
     font-weight: 500;
     margin: 0 1rem;
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Added transitions */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    /* Added transitions */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    /* Added text shadow for 3D effect */
 }
 
 .header .navbar a#Home {
@@ -80,6 +89,7 @@ body {
     color: var(--main-color);
     text-decoration: underline;
 }
+
 .services {
     min-height: 100vh;
     display: flex;
@@ -87,13 +97,15 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .home {
     min-height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    animation: fadeIn 2s ease-in-out; /* Added fade-in animation */
+    animation: fadeIn 2s ease-in-out;
+    /* Added fade-in animation */
 }
 
 .home .content {
@@ -103,14 +115,18 @@ body {
     justify-content: center;
     gap: 1rem;
     opacity: 0;
-    animation: fadeInUp 2s ease-in-out 0.5s forwards; /* Added fade-in-up animation */
+    animation: fadeInUp 2s ease-in-out 0.5s forwards;
+    /* Added fade-in-up animation */
 }
 
 .home .content h1 {
-    font-size: 5rem; /* Increased font size */
+    font-size: 5rem;
+    /* Increased font size */
     color: var(--text-color);
-    animation: textFadeIn 2s ease-out; /* Added text fade-in animation */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    animation: textFadeIn 2s ease-out;
+    /* Added text fade-in animation */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    /* Added text shadow for 3D effect */
 }
 
 .home .content h1 span {
@@ -118,25 +134,31 @@ body {
 }
 
 .home .content h3 {
-    font-size: 3rem; /* Increased font size */
+    font-size: 3rem;
+    /* Increased font size */
     color: var(--text-color);
-    animation: textFadeIn 2s ease-out 0.5s; /* Added text fade-in animation */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    animation: textFadeIn 2s ease-out 0.5s;
+    /* Added text fade-in animation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Added text shadow for 3D effect */
 }
 
 .home .content p {
     color: var(--text-color);
-    font-size: 1.5rem; /* Increased font size */
+    font-size: 1.5rem;
+    /* Increased font size */
     line-height: 1.5;
     width: 50rem;
     margin-bottom: 1rem;
     text-align: left;
-    transition: color 0.3s ease; /* Added transition for paragraph color */
+    transition: color 0.3s ease;
+    /* Added transition for paragraph color */
 }
 
 .home .content .flex-btn {
     display: inline-block;
-    animation: buttonFadeIn 2s ease-out 1s forwards; /* Added button fade-in animation */
+    animation: buttonFadeIn 2s ease-out 1s forwards;
+    /* Added button fade-in animation */
 }
 
 .home .content .flex-btn .btn {
@@ -147,7 +169,8 @@ body {
     font-weight: 500;
     border: .2rem solid var(--main-color);
     border-radius: 3rem;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Added transitions */
 }
 
 .home .content .flex-btn .btn.hire {
@@ -169,7 +192,8 @@ body {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
-    animation: iconFadeIn 2s ease-out 1.5s forwards; /* Added icon fade-in animation */
+    animation: iconFadeIn 2s ease-out 1.5s forwards;
+    /* Added icon fade-in animation */
 }
 
 .home .content .icons i {
@@ -178,7 +202,8 @@ body {
     border: .2rem solid var(--main-color);
     padding: 1rem;
     border-radius: 50%;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Added transitions */
 }
 
 .home .content .icons i:hover {
@@ -194,7 +219,8 @@ body {
     width: 42rem;
     object-fit: cover;
     box-shadow: 0 0 2.5rem var(--main-color);
-    transition: box-shadow 0.3s ease; /* Added transition for image box-shadow */
+    transition: box-shadow 0.3s ease;
+    /* Added transition for image box-shadow */
 }
 
 .home img:hover {
@@ -202,13 +228,17 @@ body {
         0 0 5rem var(--main-color),
         0 0 10rem var(--main-color);
 }
+
 .text-animation {
-    font-size: 2.5rem; /* Increased font size */
+    font-size: 2.5rem;
+    /* Increased font size */
     color: var(--text-color);
     min-width: 28rem;
     font-weight: 600;
-    animation: textAnimation 5s steps(4, end) infinite; /* Added text animation */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Added text shadow for 3D effect */
+    animation: textAnimation 5s steps(4, end) infinite;
+    /* Added text animation */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Added text shadow for 3D effect */
 }
 
 .text-animation span {
@@ -231,21 +261,27 @@ body {
     right: -8px;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
+
 .content h1 span {
     display: inline-block;
     animation: zoomRotate 4s infinite ease-in-out;
 }
 
 @keyframes zoomRotate {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1) rotate(0deg);
     }
+
     25% {
         transform: scale(1.1) rotate(3deg);
     }
+
     50% {
         transform: scale(1) rotate(0deg);
     }
+
     75% {
         transform: scale(1.1) rotate(-3deg);
     }
@@ -259,28 +295,57 @@ body {
 }
 
 @keyframes words {
-    0%, 20% {
+
+    0%,
+    20% {
         content: "DESIGNING";
     }
-    21%, 40% {
+
+    21%,
+    40% {
         content: "GRAPHICS";
     }
-    41%, 60% {
+
+    41%,
+    60% {
         content: "DESIGNING";
     }
-    61%, 80% {
+
+    61%,
+    80% {
         content: "GRAPHICS";
     }
-    81%, 100% {
+
+    81%,
+    100% {
         content: "DESIGNING";
     }
 }
 
 @keyframes typing {
-    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
         width: 0;
     }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: calc(100% + 8px);
     }
 }
@@ -290,6 +355,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -301,6 +367,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -311,6 +378,7 @@ body {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -321,6 +389,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -332,6 +401,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -343,6 +413,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -360,6 +431,7 @@ body {
         padding-top: 15rem;
     }
 }
+
 @media(max-width:700px) {
     html {
         font-size: 50.5%;
@@ -378,7 +450,7 @@ body {
     section {
         padding: 1rem;
     }
-    
+
 
     .header {
         position: relative;
@@ -393,8 +465,10 @@ body {
 
     .header .navbar {
         /* Remove sticky positioning */
-        position: relative; /* Updated to relative */
-        top: 0; /* Reset top to 0 */
+        position: relative;
+        /* Updated to relative */
+        top: 0;
+        /* Reset top to 0 */
         display: none;
         text-align: center;
         justify-content: center;
@@ -438,8 +512,10 @@ body {
     }
 
     .header .navbar {
-        position: relative; /* Make sure to keep this relative */
-        top: 0; /* Adjust according to your design */
+        position: relative;
+        /* Make sure to keep this relative */
+        top: 0;
+        /* Adjust according to your design */
         display: none;
         text-align: center;
         justify-content: center;
@@ -466,12 +542,14 @@ body {
     .home .content p {
         width: 35rem;
     }
-    .home .content{
+
+    .home .content {
         padding: 0 4%;
     }
-    .header  {
+
+    .header {
         display: flex;
-       justify-content: center;
+        justify-content: center;
     }
 
 }

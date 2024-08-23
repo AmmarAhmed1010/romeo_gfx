@@ -2,7 +2,7 @@ const PricingSection = () => {
   return (
     <section className="w-full h-full py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-xl md:text-5xl font-bold text-white font-sans mb-12 text-center">
+        <h2 className="text-xl md:text-5xl sm:text-5xl font-bold text-white font-sans mb-12 text-center">
           Our <span className='text-red-700'>Price</span> List
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
