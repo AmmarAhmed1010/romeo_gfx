@@ -1,7 +1,11 @@
 import React from 'react';
 import Image from "next/image";
 import './Landing.css';
+
 const Landing = () => {
+  const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
+  const contactMessage = "Hello, I'm interested in your services. Could you provide more details?";
+
   return (
     <div>
       <header className="header">
@@ -30,8 +34,13 @@ const Landing = () => {
             </a>
           </div>
           <div className="flex-btn">
-            <a href="https://www.instagram.com/romeo_gfx_/" className="btn hire">
-              Hire Me
+            <a
+              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn hire"
+            >
+              Contact Me
             </a>
           </div>
         </div>
@@ -47,4 +56,4 @@ const Landing = () => {
   );
 }
 
-export default Landing
+export default Landing;
