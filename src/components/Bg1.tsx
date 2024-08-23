@@ -16,7 +16,7 @@ const Bg1 = () => {
   };
 
   return (
-    <div className="h-full w-full bg-black relative flex items-center justify-center antialiased">
+    <div className="h-screen w-full bg-black relative flex items-center justify-center antialiased">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-5xl mx-auto p-5 pr-3">
         {/* Flex container with reverse column direction on mobile */}
         <div className="flex flex-col items-start">
