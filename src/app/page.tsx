@@ -7,12 +7,13 @@ import PricingSection from "@/components/PricingSection";
 export default function Home() {
   return (
 
-    <div>  
-     
+      <>
+      <Landing/>
       <MultipleCards />
-      <PricingSection/>
-      <PricingPlan/>
-      {/* <Landing/> */}
-      </div>
+      <PricingSection />
+      <PricingPlan />
+      </>
+      
+   
   );
 }

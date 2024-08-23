@@ -1,9 +1,11 @@
 import React from 'react';
 import Image from "next/image";
 import './Landing.css';
+import PricingPlan from './PricingPlan';
+import MultipleCards from './MultipleCards';
 const Landing = () => {
     return (
-        <div className='bg-black'>
+        <div>
           <header className="header">
             <a href="#" className="logo">
               Romeo<span className='text-animation'>GFX</span>
@@ -49,7 +51,6 @@ const Landing = () => {
               height={720}
             />
           </section>
-         
         </div>
       );
 }

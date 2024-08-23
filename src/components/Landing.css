@@ -79,11 +79,13 @@ body {
     color: var(--main-color);
     text-decoration: underline;
 }
-
-section {
-    padding: 5rem 5%;
+.services {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
-
 .home {
     min-height: 110vh;
     display: flex;
