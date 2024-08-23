@@ -9,8 +9,8 @@ const PricingPlan = () => {
         },
         {
           title: "Standard Plan",
-          price: "Rs: 2200",
-          features: ["1 HD Thumbnail", "1 Logo", "1 Banner","1 Professional Animated Overlay"],
+          price: "Rs: 2300",
+          features: ["2 HD Thumbnail", "1 Logo", "1 Banner","1 Professional Animated Overlay"],
         },
         {
           title: "Premium Plan",
