@@ -8,8 +8,8 @@ export default function Home() {
   return (
 
       <>
-      {/* <Landing/> */}
-      <Bg1/>
+      <Landing/>
+      {/* <Bg1/> */}
       <MultipleCards />
       <PricingSection />
       <PricingPlan />
