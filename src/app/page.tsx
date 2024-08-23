@@ -1,3 +1,4 @@
+import Bg1 from "@/components/Bg1";
 import Landing from "@/components/Landing";
 import MultipleCards from "@/components/MultipleCards";
 import PricingPlan from "@/components/PricingPlan";
@@ -7,7 +8,8 @@ export default function Home() {
   return (
 
       <>
-      <Landing/>
+      {/* <Landing/> */}
+      <Bg1/>
       <MultipleCards />
       <PricingSection />
       <PricingPlan />
