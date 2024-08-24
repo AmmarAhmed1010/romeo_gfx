@@ -10,11 +10,6 @@ export default function Home() {
   return (
 
       <>
-      <header className="w-full p-4 bg-black">
-      <h1 className="text-3xl px-20 py-3 lg:text-3xl font-serif  font-bold text-white  lg:text-left text-center">
-        Romeo<span className="text-red-700">GFX</span>
-      </h1>
-    </header>
       <Bg1/> 
       <MultipleCards />
       <PricingSection />
