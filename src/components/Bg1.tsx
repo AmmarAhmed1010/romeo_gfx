@@ -20,7 +20,7 @@ const Bg1 = () => {
         Romeo<span className="text-red-700">GFX</span>
       </header>
       <div className="h-full w-full bg-black relative  flex">
-        <div className="flex flex-col-reverse lg:flex-row mb-10 items-center justify-between h-screen w-full px-4 lg:px-24 space-y-2 lg:space-y-0">
+        <div className="flex flex-col-reverse  lg:flex-row mb-10 items-center justify-between h-screen w-full px-4 lg:px-24 space-y-2 lg:space-y-0">
           {/* Content Section */}
           <div className="flex flex-col items-start lg:items-start text-center lg:text-left">
             <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white py-6">
@@ -40,7 +40,7 @@ const Bg1 = () => {
           </div>
 
           {/* Logo Section */}
-          <div className="relative flex justify-center mt-4 lg:mt-0">
+          <div className="relative flex justify-center mt-4 overflow-hidden lg:mt-0">
             <Image
               src="/imgprofile.png"
               alt="Profile Image"
