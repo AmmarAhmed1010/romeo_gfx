@@ -19,7 +19,7 @@ const Bg1 = () => {
     <div className="h-screen w-full bg-black relative flex ">
       <div className="flex flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row xl:flex-row xl:px-36 lg:px-20 xl:mb-24 lg:mb-20 items-center justify-between w-full">
         {/* Flex container with reverse column direction on mobile */}
-        <div className="flex flex-col px-4 sm:mb-16  lg:mx-3 items-start">
+        <div className="flex flex-col px-4 py-8 sm:mb-16  lg:mx-3 items-start">
           {/* Content on the left side */}
           <div className="text-4xl font-serif lg:text-5xl xl:text-7xl font-bold py-4 lg:my-8 xl:my-8 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white">
             <span className="text-white">I Am</span>{" "}
@@ -38,7 +38,7 @@ const Bg1 = () => {
             Hire Me
           </button>
         </div>
-        <div className="flex-shrink-0 lg:mb-0 xl:ml-8">
+        <div className="flex-shrink-0 lg:mb-0 mt-6 xl:ml-8">
           {/* Logo on the right side */}
           <LogoNew />
         </div>
