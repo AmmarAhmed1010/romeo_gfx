@@ -19,7 +19,7 @@ const Bg1 = () => {
       <header className="w-full bg-black font-serif font-bold text-center lg:text-left text-white px-20 py-8 text-3xl">
         Romeo<span className="text-red-700">GFX</span>
       </header>
-      <div className="h-full w-full bg-black relative  flex">
+      <div className="h-screen w-full bg-black relative  flex">
         <div className="flex flex-col-reverse  lg:flex-row mb-10 items-center justify-between h-screen w-full px-4 lg:px-24 space-y-2 lg:space-y-0">
           {/* Content Section */}
           <div className="flex flex-col items-start lg:items-start text-center lg:text-left">
