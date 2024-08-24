@@ -19,16 +19,16 @@ const Bg1 = () => {
       <header className="w-full bg-black font-serif font-bold text-center lg:text-left text-white px-20 py-8 text-3xl">
         Romeo<span className="text-red-700">GFX</span>
       </header>
-      <div className="h-full w-full bg-black relative flex">
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between h-screen w-full px-4 lg:px-24 space-y-4 lg:space-y-0">
+      <div className="h-full w-full bg-black relative  flex">
+        <div className="flex flex-col-reverse lg:flex-row mb-10 items-center justify-between h-screen w-full px-4 lg:px-24 space-y-2 lg:space-y-0">
           {/* Content Section */}
-          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+          <div className="flex flex-col items-start lg:items-start text-center lg:text-left">
             <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white py-6">
               <span className="text-white">I Am</span>{" "}
               <span className="">RomeoGFX</span>
             </div>
             <FlipText />
-            <div className="text-white max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg my-4">
+            <div className="text-white text-start max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg my-4">
               <GenerateText />
             </div>
             <button
