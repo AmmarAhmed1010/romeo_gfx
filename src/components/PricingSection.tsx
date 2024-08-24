@@ -3,11 +3,12 @@ import React from 'react';
 const PricingSection = () => {
   return (
     <section className="w-full h-full py-20 bg-black">
-      <div className="max-w-6xl mx-auto px-4"> {/* Reduced max-width from 7xl to 6xl */}
+      <div className="mx-auto px-6 md:px-8">
+        {/* Reduced max-width from 7xl to 6xl */}
         <h2 className="text-3xl sm:text-3xl md:text-5xl font-bold text-white font-sans mb-12 text-center">
           Our <span className='text-red-700'>Price</span> List
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             { title: "Thumbnail Design", price: "Rs: 250", delay: "0" },
             { title: "Logo Design", price: "Rs: 400", delay: "100" },

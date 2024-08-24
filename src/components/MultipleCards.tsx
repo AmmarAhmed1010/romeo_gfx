@@ -10,7 +10,7 @@ const MultipleCards = () => {
 
   return (
     <section className="w-ful bg-black h-full">
-      <div className="max-w-7xl px-3">
+      <div className="md:px-20 px-3">
         <h2 className="text-3xl sm:text-3xl md:text-5xl px-4 font-bold text-red-600 font-sans mb-2">
           <span className="text-white">Explore</span> My <span className="text-white">Media</span> Collection
         </h2>
@@ -24,7 +24,7 @@ const MultipleCards = () => {
 const DummyContent1 = () => {
   return (
     <div className="bg-black p-8 md:p-14 rounded-3xl mb-4">
-      <div className="flex gap-9 my-5 flex-col">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-9 my-5">
         {[...Array(15)].map((_, index) => (
           <Image
             key={index}
@@ -32,7 +32,7 @@ const DummyContent1 = () => {
             alt={`Gaming illustration ${index + 1}`}
             height="500"
             width="500"
-            className="md:w-1/2 md:h-1/2 rounded-xl h-full w-full mx-auto object-contain"
+            className="rounded-xl object-contain w-full h-full"
           />
         ))}
       </div>
@@ -43,15 +43,15 @@ const DummyContent1 = () => {
 const DummyContent2 = () => {
   return (
     <div className="bg-black p-8 md:p-14 rounded-3xl mb-4">
-      <div className="flex gap-9 my-5 flex-col">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-9 my-5">
         {[...Array(11)].map((_, index) => (
           <Image
             key={index}
             src={`/irl${index + 1}.png`}
-            alt={`Gaming illustration ${index + 1}`}
+            alt={`IRL illustration ${index + 1}`}
             height="500"
             width="500"
-            className="md:w-1/2 md:h-1/2 rounded-xl h-full w-full mx-auto object-contain"
+            className="rounded-xl object-contain w-full h-full"
           />
         ))}
       </div>
@@ -62,15 +62,15 @@ const DummyContent2 = () => {
 const DummyContent3 = () => {
   return (
     <div className="bg-black p-8 md:p-14 rounded-3xl mb-4">
-      <div className="flex gap-9 my-5 flex-col">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-9 my-5">
         {[...Array(11)].map((_, index) => (
           <Image
             key={index}
             src={`/logo${index + 1}.png`}
-            alt={`Gaming illustration ${index + 1}`}
+            alt={`Logo illustration ${index + 1}`}
             height="500"
             width="500"
-            className="md:w-1/2 md:h-1/2 rounded-xl h-full w-full mx-auto object-contain"
+            className="rounded-xl object-contain w-full h-full"
           />
         ))}
       </div>
@@ -81,7 +81,7 @@ const DummyContent3 = () => {
 const DummyContent4 = () => {
   return (
     <div className="bg-black p-8 md:p-14 rounded-3xl mb-4">
-      <div className="flex gap-9 my-5 flex-col">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-9 my-5">
         {[...Array(9)].map((_, index) => (
           <video
             key={index}
@@ -89,13 +89,14 @@ const DummyContent4 = () => {
             controls
             height="500"
             width="500"
-            className="md:w-1/2 md:h-1/2 rounded-xl h-full w-full mx-auto object-contain"
+            className="rounded-xl object-contain w-full h-full"
           />
         ))}
       </div>
     </div>
   );
 };
+
 
 const data = [
   {
@@ -119,7 +120,7 @@ const data = [
   {
     category: "Overlay",
     title: "Click to see more",
-    src: "/over.png",
+    src: "/imgprofile.png",
     content: <DummyContent4 />,
   },
 ];
