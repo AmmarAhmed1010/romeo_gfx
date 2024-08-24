@@ -11,7 +11,7 @@ export default function Home() {
 
       <>
       <header className="w-full p-4 bg-black">
-      <h1 className="text-3xl px-20 py-3 md:text-3xl font-serif font-bold text-white  md:text-left text-center">
+      <h1 className="text-3xl px-20 py-3 lg:text-3xl font-serif font-bold text-white  lg:text-left text-center">
         Romeo<span className="text-red-700">GFX</span>
       </h1>
     </header>

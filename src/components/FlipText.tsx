@@ -2,7 +2,7 @@ import React from "react";
 import { FlipWords } from "./ui/flip-words";
  
 const FlipText = () => {
-    const words = ["Desingning", "Animation"];
+    const words = ["Animation","Styling"];
  
     return (
         <div className="text-4xl mx-auto font-normal text-white">

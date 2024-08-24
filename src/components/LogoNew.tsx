@@ -4,7 +4,8 @@ import { cn } from "@/utils/cn";
 const LogoNew = () => {
   return (
     <div className="flex">
-      <div className="w-[250px] h-[250px] md:w-[400px] md:h-[400px]"> {/* Set specific width and height with responsive values */}
+      <div className="w-[270px] h-[270px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px]">
+        {/* Set specific width and height with responsive values */}
         <div
           className={cn(
             "group w-full h-full cursor-pointer overflow-hidden relative card mx-auto flex justify-center items-center p-4 border border-transparent dark:border-neutral-800",
