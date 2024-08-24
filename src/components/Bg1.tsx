@@ -24,7 +24,7 @@ const Bg1 = () => {
     <div className="h-full w-full bg-black relative flex ">
       <div className="flex h-screen flex-col-reverse space-y-2 items-center w-full justify-between">
         {/* Flex container with reverse column direction on mobile */}
-        <div className="flex flex-col mb-16 items-start">
+        <div className="flex flex-col mb-28 items-start">
           {/* Content on the left side */}
           <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold  md:py-6 lg:py-8 xl:py-8 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white">
             <span className="text-white">I Am</span>{" "}

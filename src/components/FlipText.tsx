@@ -5,7 +5,7 @@ const FlipText = () => {
     const words = ["Animation","Styling"];
  
     return (
-        <div className="text-xl mx-auto font-normal text-white">
+        <div className="text-xl font-normal text-white">
         I specialize in
           <FlipWords words={words} /> <br />
         </div>
