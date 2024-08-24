@@ -59,7 +59,7 @@ export const FlipWords = ({
         }}
         className={cn(
           "z-10 inline-block relative text-left font-serif font-bold px-2",
-          "text-2xl sm:text-2xl xs:text-xl", // Responsive text size
+          "text-xl sm:text-2xl xs:text-xl", // Responsive text size
           "text-red-700",
           className
         )}

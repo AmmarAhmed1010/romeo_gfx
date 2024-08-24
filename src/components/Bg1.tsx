@@ -25,9 +25,9 @@ const Bg1 = () => {
             <span className="text-white">I Am</span>{" "}
             <span className="">RomeoGFX</span>
           </div>
-          <h1 className="">
+          <div>
             <FlipText />
-          </h1>
+            </div>
           <div className="text-white max-w-lg my-2 relative z-10">
             <GenerateText />
           </div>
