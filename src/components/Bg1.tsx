@@ -16,19 +16,19 @@ const Bg1 = () => {
   };
 
   return (
-    <div className="h-screen w-full bg-black relative flex ">
-      <div className="flex flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row xl:flex-row xl:px-36 lg:px-20 xl:mb-24 lg:mb-20 items-center justify-between w-full">
+    <div className="h-screen w-full bg-black relative flex">
+      <div className="flex flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row xl:flex-row xl:px-36 lg:px-24 md:px-16 sm:px-8 xl:mb-24 lg:mb-20 md:mb-16 sm:mb-12 items-center justify-between w-full">
         {/* Flex container with reverse column direction on mobile */}
-        <div className="flex flex-col px-4 py-8 sm:mb-16  lg:mx-3 items-start">
+        <div className="flex flex-col px-4 py-8 sm:mb-8 md:mb-12 lg:mb-16 xl:mb-16 items-start">
           {/* Content on the left side */}
-          <div className="text-4xl font-serif lg:text-5xl xl:text-7xl font-bold py-4 lg:my-8 xl:my-8 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white">
+          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif font-bold py-2  md:py-6 lg:py-8 xl:py-8 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white">
             <span className="text-white">I Am</span>{" "}
             <span className="">RomeoGFX</span>
           </div>
           <div>
             <FlipText />
-            </div>
-          <div className="text-white max-w-lg my-2 relative z-10">
+          </div>
+          <div className="text-white max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-lg my-2 relative z-10">
             <GenerateText />
           </div>
           <button
@@ -38,7 +38,7 @@ const Bg1 = () => {
             Hire Me
           </button>
         </div>
-        <div className="flex-shrink-0 lg:mb-0 mt-6 xl:ml-8">
+        <div className="flex shrink-0 mt-4  md:mt-8 lg:mt-8 xl:ml-8">
           {/* Logo on the right side */}
           <LogoNew />
         </div>
