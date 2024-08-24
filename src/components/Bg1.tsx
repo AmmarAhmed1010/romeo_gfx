@@ -40,14 +40,15 @@ const Bg1 = () => {
           </div>
 
           {/* Logo Section */}
-          <div className="relative flex justify-center mt-4 overflow-hidden lg:mt-0">
-            <Image
+          <div className="relative flex justify-center p-4 mt-4 overflow-hidden lg:mt-0">
+            <LogoNew/>
+            {/* <Image
               src="/imgprofile.png"
               alt="Profile Image"
               className="rounded-[50%] shadow-[0_0_10px_2px_rgba(255,0,0,0.6)] hover:shadow-[0_0_20px_10px_rgba(255,0,0,0.8)] transition-shadow duration-500"
               width={300} // Adjusted size for better view on smaller screens
               height={300}
-            />
+            /> */}
           </div>
         </div>
         <BackgroundBeams />
