@@ -17,16 +17,16 @@ const BgNew = () => {
     <h1>RomeoGFX</h1>
    </div>
    {/* Main */}
-   <div className="w-full h-screen flex flex-col-reverse">
+   <div className="w-full  h-screen flex flex-col-reverse">
      {/* DivLeft */}
-    <div className="h-full flex justify-center px-8 py-2 text-white">
+    <div className="h-full bg-yellow-200 flex justify-center px-8 py-2 text-white">
     <p>
 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem eum voluptatem sequi sint dolorum cupiditate, numquam sapiente sed perspiciatis veniam ad vitae? Architecto ducimus illo nemo reprehenderit impedit aut incidunt!
 
     </p>
     </div>
     {/* DivRight */}
-    <div className="h-full flex justify-center py-4 items-center">
+    <div className="h-full flex justify-center bg-red-200 items-center">
       <Image
               src="/imgprofile.png"
               alt="Profile Image"
