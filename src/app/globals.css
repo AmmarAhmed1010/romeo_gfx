@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Create a 10px wide border and animate its movement around the card */
+
+.border-10 {
+    border-width: 10px;
+  }
+  
+  @keyframes borderLoop {
+    0% {
+      clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    }
+    25% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    }
+    50% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    75% {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+    }
+    100% {
+      clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+    }
+  }
+  
+  .animate-borderLoop {
+    animation: borderLoop 3s infinite linear;
+  }
+  
