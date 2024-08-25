@@ -15,15 +15,15 @@ const BgNew = () => {
       };
     return (
         <>
-            <div className="h-full w-full bg-black">
+            <div className="h-full bg-black w-full">
                 <BackgroundBeams />
 
                 {/* Header */}
-                <div className="w-full py-4 flex text-3xl justify-center text-white">
+                <div className="text-white text-3xl flex justify-center py-4">
                     <h1>Romeo</h1><span className="text-red-700">GFX</span>
                 </div>
                 {/* Main */}
-                <div className="w-full h-screen flex flex-col-reverse">
+                <div className="flex flex-col-reverse">
                     {/* DivLeft */}
                     <div className="w-full flex flex-col py-4 px-4">
                         <div className="flex gap-1 mb-2 text-3xl">
