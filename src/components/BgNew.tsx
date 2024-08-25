@@ -7,6 +7,12 @@ import FlipText from "./FlipText";
 import Image from "next/image";
 
 const BgNew = () => {
+    const handleClick = () => {
+        const phoneNumber = "03158552233"; 
+        const message = encodeURIComponent("Hello, I'm interested in your services.");
+        const url = `https://wa.me/${phoneNumber}?text=${message}`;
+        window.open(url, "_blank");
+      };
     return (
         <>
             <div className="h-full w-full bg-black">
@@ -19,8 +25,8 @@ const BgNew = () => {
                 {/* Main */}
                 <div className="w-full h-screen flex flex-col-reverse">
                     {/* DivLeft */}
-                    <div className="w-full h-full flex flex-col px-4">
-                        <div className="flex gap-1 text-3xl">
+                    <div className="w-full h-full flex flex-col py-4 px-4">
+                        <div className="flex gap-1 mb-2 text-3xl">
                             <h1 className="text-white">I Am</h1><span className="font-serif font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white">RomeoGFX</span>
                         </div>
                         <div>
@@ -32,7 +38,9 @@ const BgNew = () => {
                             </p>
                         </div>
                         <div>
-                            <button className="bg-red-700 text-white py-1 px-3 rounded-xl my-2">Hire Me</button>
+                            <button 
+                            onClick={handleClick}
+                            className="bg-red-700 text-white py-1 px-3 rounded-xl my-4">Hire Me</button>
                         </div>
                     </div>
                     {/* DivRight */}
@@ -41,8 +49,8 @@ const BgNew = () => {
                             src="/imgprofile.png"
                             alt="Profile Image"
                             className="rounded-[50%] shadow-[0_0_10px_2px_rgba(255,0,0,0.6)]"
-                            width={300} // Adjusted size for better view on smaller screens
-                            height={300}
+                            width={280} // Adjusted size for better view on smaller screens
+                            height={280}
                         />
                     </div>
                 </div>
