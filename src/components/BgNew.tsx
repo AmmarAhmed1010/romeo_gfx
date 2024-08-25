@@ -25,7 +25,7 @@ const BgNew = () => {
                 {/* Main */}
                 <div className="w-full h-screen flex flex-col-reverse">
                     {/* DivLeft */}
-                    <div className="w-full h-full flex flex-col py-4 px-4">
+                    <div className="w-full flex flex-col py-4 px-4">
                         <div className="flex gap-1 mb-2 text-3xl">
                             <h1 className="text-white">I Am</h1><span className="font-serif font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white">RomeoGFX</span>
                         </div>
