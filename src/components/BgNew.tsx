@@ -48,7 +48,7 @@ const BgNew = () => {
                     </div>
 
                     {/* DivRight */}
-                    <div className="w-full lg:w-1/2 flex justify-center pb-2">
+                    <div className="w-full lg:w-1/2 my-4 flex justify-center pb-2">
                         <Image
                             src="/imgprofile.png"
                             alt="Profile Image"
