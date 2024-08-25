@@ -10,9 +10,9 @@ export default function Home() {
       <>
       <BgNew/>
       {/* <Bg1/>  */}
-      {/* <MultipleCards />
+      <MultipleCards />
       <PricingSection />
-      <PricingPlan /> */}
+      <PricingPlan />
       </>  
   );
 }
