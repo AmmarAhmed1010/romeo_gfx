@@ -10,7 +10,7 @@ const CardsDesign = () => {
           <div className="bg-red-800 shadow-lg rounded-lg p-6 max-w-sm w-full">
            <h1 className='text-center text-white text-2xl font-bold'>Basic Plan</h1>
            <div className='flex items-center gap-2'>
-           <h4 className='text-xl text-white'>Starts at</h4><span className='text-2xl font-bold'>Rs: 1500</span>
+           <h4 className='text-xl text-white'>Starts at</h4><span className='text-2xl font-bold text-yellow-400'>Rs: 1500</span>
            </div>
            <div className="content text-white  space-y-2 my-4">
       <h4 className="flex items-center ">
@@ -45,7 +45,7 @@ const CardsDesign = () => {
           <div className="bg-red-800 shadow-lg rounded-lg p-6 max-w-sm w-full">
            <h1 className='text-center text-white text-2xl font-bold'>Standard Plan</h1>
            <div className='flex items-center gap-2'>
-           <h4 className='text-xl text-white'>Starts at</h4><span className='text-2xl font-bold'>Rs: 2300</span>
+           <h4 className='text-xl text-white'>Starts at</h4><span className='text-2xl font-bold text-yellow-400'>Rs: 2300</span>
            </div>
            <div className="content text-white  space-y-2 my-4">
       <h4 className="flex items-center ">
@@ -80,7 +80,7 @@ const CardsDesign = () => {
           <div className="bg-red-800 shadow-lg rounded-lg p-6 max-w-sm w-full">
            <h1 className='text-center text-white text-2xl font-bold'>Premium Plan</h1>
            <div className='flex items-center gap-2'>
-           <h4 className='text-xl text-white'>Starts at</h4><span className='text-2xl font-bold'>Rs: 2800</span>
+           <h4 className='text-xl text-white'>Starts at</h4><span className='text-2xl font-bold text-yellow-400'>Rs: 2800</span>
            </div>
            <div className="content text-white  space-y-2 my-4">
       <h4 className="flex items-center ">

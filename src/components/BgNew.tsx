@@ -7,12 +7,9 @@ import FlipText from "./FlipText";
 import Image from "next/image";
 
 const BgNew = () => {
-    const handleClick = () => {
-        const phoneNumber = "03158552233";
-        const message = encodeURIComponent("Hello, I'm interested in your services.");
-        const url = `https://wa.me/${phoneNumber}?text=${message}`;
-        window.open(url, "_blank");
-    };
+    const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
+  const contactMessage = "Hello, I'm interested in your services.";
+
 
     return (
         <>
@@ -39,12 +36,14 @@ const BgNew = () => {
                             
                         </div>
                         <div>
-                        <button
-    onClick={() => alert('Button clicked!')}
-    className="bg-red-700 2xl:text-xl 2xl:px-6 2xl:py-2 text-white py-1 px-3 rounded-xl my-4"
->
-    Hire Me
-</button>
+                        <a
+                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-600 my-4 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-105 inline-block text-center"
+              >
+                Hire Me
+              </a>
                         </div>
                     </div>
                     {/* DivRight */}

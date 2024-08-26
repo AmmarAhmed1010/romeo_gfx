@@ -7,12 +7,8 @@ import FlipText from "./FlipText";
 import Image from "next/image";
 
 const Bg1 = () => {
-  const handleClick = () => {
-    const phoneNumber = "03158552233"; 
-    const message = encodeURIComponent("Hello, I'm interested in your services.");
-    const url = `https://wa.me/${phoneNumber}?text=${message}`;
-    window.open(url, "_blank");
-  };
+  const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
+  const contactMessage = "Hello, I'm interested in your services.";
 
   return (
     <>
@@ -31,24 +27,19 @@ const Bg1 = () => {
             <div className="text-white text-start max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg my-4">
               <GenerateText />
             </div>
-            <button
-              onClick={handleClick}
-              className="bg-red-700 text-white rounded-2xl py-2 px-6 hover:bg-red-800 transition"
-            >
-              Hire Me
-            </button>
+            <a
+                href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-105 inline-block text-center"
+              >
+                Choose Plan
+              </a>
           </div>
 
           {/* Logo Section */}
           <div className="relative flex justify-center p-4 mt-4 overflow-hidden lg:mt-0">
             <LogoNew/>
-            {/* <Image
-              src="/imgprofile.png"
-              alt="Profile Image"
-              className="rounded-[50%] shadow-[0_0_10px_2px_rgba(255,0,0,0.6)] hover:shadow-[0_0_20px_10px_rgba(255,0,0,0.8)] transition-shadow duration-500"
-              width={300} // Adjusted size for better view on smaller screens
-              height={300}
-            /> */}
           </div>
         </div>
         <BackgroundBeams />
