@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const BgNew = () => {
     const handleClick = () => {
-        const phoneNumber = "03158552233"; 
+        const phoneNumber = "03158552233";
         const message = encodeURIComponent("Hello, I'm interested in your services.");
         const url = `https://wa.me/${phoneNumber}?text=${message}`;
         window.open(url, "_blank");
@@ -34,14 +34,17 @@ const BgNew = () => {
                             <FlipText />
                         </div>
                         <div>
-                            <p>
+                
                                 <GenerateText />
-                            </p>
+                            
                         </div>
                         <div>
-                            <button 
-                                onClick={handleClick}
-                                className="bg-red-700 2xl:text-xl 2xl:px-6 2xl:py-2 text-white py-1 px-3 rounded-xl my-4">Hire Me</button>
+                        <button
+    onClick={() => alert('Button clicked!')}
+    className="bg-red-700 2xl:text-xl 2xl:px-6 2xl:py-2 text-white py-1 px-3 rounded-xl my-4"
+>
+    Hire Me
+</button>
                         </div>
                     </div>
                     {/* DivRight */}

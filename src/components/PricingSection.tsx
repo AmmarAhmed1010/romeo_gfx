@@ -23,7 +23,7 @@ const PricingSection = () => {
               className="bg-red-800 p-3 rounded-xl shadow-md text-center cursor-pointer relative"
               style={{ transitionDelay: `${item.delay}ms` }}
             >
-              <div className="absolute inset-0 rounded-xl border-4 border-[#D3D3D3] animate-borderLoop"></div>
+              <div className="absolute inset-0 rounded-xl"></div>
               <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-3 relative z-10">
                 {item.title}
               </h3>

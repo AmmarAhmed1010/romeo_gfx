@@ -34,17 +34,18 @@ const PricingPlan = () => {
           {pricingPlans.map((plan, index) => (
             <div
               key={index}
-              className="bg-red-800 rounded-lg shadow-lg p-6 flex flex-col items-center text-center"
+              className="bg-red-800 rounded-lg shadow-lg p-6 flex flex-col items-center text-left transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-red-700"
             >
-              <h3 className="text-xl font-semibold text-white mb-4">
+
+              <h3 className="text-xl font-semibold text-white mb-4 transition-opacity duration-300 ease-in-out opacity-90 hover:opacity-100">
                 {plan.title}
               </h3>
-              <p className="text-3xl font-bold text-white mb-6">
+              <p className="text-3xl font-bold text-white mb-6 transition-transform duration-300 ease-in-out hover:scale-110">
                 {plan.price}
               </p>
               <ul className="mb-8">
                 {plan.features.map((feature, index) => (
-                  <li key={index} className="text-white mb-2">
+                  <li key={index} className="text-white mb-2 transition-transform duration-300 ease-in-out hover:translate-x-2">
                     {feature}
                   </li>
                 ))}
@@ -53,7 +54,7 @@ const PricingPlan = () => {
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(plan.message)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition transform hover:scale-105 inline-block text-center"
+                className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-105 inline-block text-center"
               >
                 Choose Plan
               </a>
