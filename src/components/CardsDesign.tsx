@@ -5,7 +5,7 @@ const CardsDesign = () => {
     const contactMessage = "Hello, I'm interested in your services.";
 
     return (
-        <div className="flex bg-black flex-col md:flex-row font-serif justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-4">
+        <div className="flex bg-black flex-col md:flex-row font-serif justify-center items-center space-y-8 md:space-y-0 md:space-x-4 p-4">
           {/* Card 1 */}
           <div className="bg-red-800 shadow-lg rounded-lg p-6 max-w-sm w-full">
            <h1 className='text-center text-white text-2xl font-bold'>Basic Plan</h1>
@@ -30,7 +30,7 @@ const CardsDesign = () => {
         1 Non Animated Overlay
       </h4>
     </div>
-           <div className="">
+           <div className="w-full flex justify-center">
            <a
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
                 target="_blank"
@@ -65,7 +65,7 @@ const CardsDesign = () => {
         1 Professiontal Animated Overlay
       </h4>
     </div>
-           <div className="">
+           <div className="w-full flex justify-center">
            <a
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
                 target="_blank"
@@ -100,7 +100,7 @@ const CardsDesign = () => {
         1 Professiontal Overlay
       </h4>
     </div>
-           <div className="">
+           <div className="w-full flex justify-center">
            <a
                 href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
                 target="_blank"
