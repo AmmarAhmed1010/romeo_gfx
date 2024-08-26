@@ -7,9 +7,9 @@ export default function Home() {
   return (
 
     <>
-    
+  
       <BgNew />
-      <MultipleCards />
+      <MultipleCards /> 
       <PricingSection />
       <CardsDesign />
       

@@ -86,7 +86,7 @@ const PricingSection = () => {
 
   return (
     <section className="w-full h-full py-20 bg-black">
-      <div className="mx-auto px-6 md:px-8">
+      <div className="mx-auto px-6 font-serif md:px-8">
         <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white font-sans mb-12 text-center">
           Our <span className="text-red-700">Price</span> List
         </h2>
@@ -94,7 +94,7 @@ const PricingSection = () => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="bg-red-800 p-3 rounded-xl shadow-md text-center cursor-pointer relative"
+              className="bg-red-800 p-6 rounded-xl shadow-md text-center cursor-pointer relative moving-border"
             >
               <motion.h3
                 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-3 relative z-10"
@@ -115,7 +115,7 @@ const PricingSection = () => {
                 Perfect for YouTube and other platforms.
               </motion.p>
               <motion.p
-                className="text-xl sm:text-2xl md:text-3xl font-bold text-white relative z-10"
+                className="text-xl sm:text-2xl md:text-3xl font-bold text-yellow-400 relative z-10"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}

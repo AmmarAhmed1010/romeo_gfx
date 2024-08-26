@@ -19,10 +19,16 @@ const CardsDesign = () => {
   };
 
   return (
-    <div className="flex bg-black flex-col md:flex-row font-serif justify-center items-center space-y-8 md:space-y-0 md:space-x-4 p-4">
+    <div className='h-full flex bg-black flex-col w-full'>
+      <div className='text-center'>
+      <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white font-sans mb-8 text-center">
+          <span className="text-red-700">Pricing</span> Plan
+        </h2>
+      </div>
+    <div className="flex  flex-col md:flex-row font-serif justify-center items-center space-y-8 md:space-y-0 md:space-x-4 p-4">
       {/* Card 1 */}
       <motion.div
-        className="bg-red-800 shadow-lg rounded-lg p-6 max-w-sm w-full"
+        className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -76,7 +82,7 @@ const CardsDesign = () => {
 
       {/* Repeat the same structure for Card 2 and Card 3 with different content */}
       <motion.div
-        className="bg-red-800 shadow-lg rounded-lg p-6 max-w-sm w-full"
+        className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -129,7 +135,7 @@ const CardsDesign = () => {
       </motion.div>
 
       <motion.div
-        className="bg-red-800 shadow-lg rounded-lg p-6 max-w-sm w-full"
+        className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -170,16 +176,18 @@ const CardsDesign = () => {
           ))}
         </div>
         <div className="w-full flex justify-center">
-          <a
-            href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-105 inline-block text-center"
-          >
-            Choose Plan
-          </a>
+        <a
+  href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg inline-block text-center"
+>
+  Choose Plan
+</a>
+
         </div>
       </motion.div>
+    </div>
     </div>
   );
 };

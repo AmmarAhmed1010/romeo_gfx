@@ -2,72 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Create a 10px wide border and animate its movement around the card */
-.border-10 {
-  border-width: 10px;
-}
-
-@keyframes borderLoopSmooth {
-  0% {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
-  }
-  25% {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-  50% {
-      clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%);
-  }
-  75% {
-      clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
-  }
-  100% {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-}
-
-.animate-borderLoop {
-  animation: borderLoopSmooth 3s infinite linear;
-}
-.border-10 {
-  border-width: 10px;
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
-}
-
-@keyframes smooth3DBorderLoop {
-  0% {
-      clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
-      transform: translateZ(0) rotateX(0deg) rotateY(0deg);
-  }
-  20% {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
-      transform: translateZ(30px) rotateX(15deg) rotateY(15deg);
-  }
-  40% {
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-      transform: translateZ(60px) rotateX(30deg) rotateY(30deg);
-  }
-  60% {
-      clip-path: polygon(0% 0%, 100% 100%, 100% 0%, 0% 100%);
-      transform: translateZ(30px) rotateX(15deg) rotateY(15deg);
-  }
-  80% {
-      clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
-      transform: translateZ(0) rotateX(0deg) rotateY(0deg);
-  }
-  100% {
-      clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
-      transform: translateZ(0) rotateX(0deg) rotateY(0deg);
-  }
-}
-
-.animate-smooth3DBorderLoop {
-  animation: smooth3DBorderLoop 5s infinite ease-in-out;
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-
 .img {
   border-radius: 50%;
   object-fit: cover;
@@ -80,4 +14,6 @@
       0 0 5rem #c53030,    /* Tailwind's red-700 color */
       0 0 10rem #c53030;   /* Tailwind's red-700 color */
 }
-
+.custom-underline {
+  text-decoration-color: #0a0a0a; /* Replace with your desired color */
+}
