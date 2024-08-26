@@ -61,7 +61,7 @@ const DummyContent2 = () => {
 
 const DummyContent3 = () => {
   return (
-    <div className="bg-black p-8 md:p-14 rounded-3xl mb-4">
+    <div className="bg-black  p-8 md:p-14 rounded-3xl mb-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-9 my-5">
         {[...Array(11)].map((_, index) => (
           <Image

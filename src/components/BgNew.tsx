@@ -17,7 +17,7 @@ const BgNew = () => {
     };
 
     return (
-        <div className="h-full 2xl:h-screen bg-black w-full">
+        <div className="h-full 2xl:h-screen bg-black">
             <BackgroundBeams />
             {/* Header */}
             <motion.div
