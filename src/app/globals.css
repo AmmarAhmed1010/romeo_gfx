@@ -67,3 +67,17 @@
   transform-style: preserve-3d;
   perspective: 1000px;
 }
+
+.img {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 2.5rem #c53030; /* Tailwind's red-700 color */
+}
+
+.img:hover {
+  box-shadow: 
+      0 0 2.5rem #c53030,  /* Tailwind's red-700 color */
+      0 0 5rem #c53030,    /* Tailwind's red-700 color */
+      0 0 10rem #c53030;   /* Tailwind's red-700 color */
+}
+
