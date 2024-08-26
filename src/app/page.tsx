@@ -7,12 +7,12 @@ export default function Home() {
   return (
 
     <>
-    <div className="h-screen w-screen bg-black">
+    
       <BgNew />
       <MultipleCards />
       <PricingSection />
       <CardsDesign />
-      </div>
+      
     </>
   );
 }
