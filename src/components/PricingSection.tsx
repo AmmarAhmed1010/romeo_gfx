@@ -3,16 +3,30 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const PricingSection = () => {
-  // Animation variants for cards
-  const cardVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeInOut' } },
-  };
+  // Animation variants for cards with direction-based movement
+  const cardVariants = (direction: string) => ({
+    hidden: { opacity: 0, x: direction === 'left' ? -50 : 50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.42, 0, 0.58, 1], // Custom ease-in-out curve for smoother animation
+      },
+    },
+  });
 
   // Animation variants for text
   const textVariants = {
     hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeInOut' } },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.42, 0, 0.58, 1], // Custom ease-in-out curve for smoother animation
+      },
+    },
   };
 
   return (
@@ -38,7 +52,7 @@ const PricingSection = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
-              variants={cardVariants}
+              variants={cardVariants(index % 2 === 0 ? 'left' : 'right')} // Apply direction-based animation
               whileHover={{ scale: 1.05 }}
             >
               <motion.h3
