@@ -9,14 +9,17 @@ const MultipleCards = () => {
   ));
 
   return (
-    <section className="w-ful bg-black h-full">
-      <div className="md:px-20 px-3">
+    // <section className="w-full  h-screen">
+      <div className="md:px-20 w-full bg-black 2xl-px-10 px-3">
         <h2 className="text-3xl sm:text-3xl md:text-5xl px-4 font-bold text-red-600 font-sans mb-2">
           <span className="text-white">Explore</span> My <span className="text-white">Media</span> Collection
         </h2>
+        <div>
         <Carousel items={cards} />
+        </div>
       </div>
-    </section>
+
+    
   );
   
 }
@@ -61,7 +64,7 @@ const DummyContent2 = () => {
 
 const DummyContent3 = () => {
   return (
-    <div className="bg-black  p-8 md:p-14 rounded-3xl mb-4">
+    <div className="bg-black p-8 md:p-14 rounded-3xl mb-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-9 my-5">
         {[...Array(11)].map((_, index) => (
           <Image

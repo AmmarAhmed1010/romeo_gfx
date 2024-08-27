@@ -32,7 +32,7 @@ const BgNew = () => {
             </motion.div>
             {/* Main */}
             <motion.div
-                className="flex flex-col-reverse lg:flex-row 2xl:h-full lg:px-10 2xl:px-20 2xl:pb-20 2xl:flex-row 2xl:items-center"
+                className="flex flex-col-reverse lg:flex-row 2xl:h-full lg:px-10 2xl:pb-20 2xl:flex-row 2xl:items-center"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
@@ -40,7 +40,7 @@ const BgNew = () => {
             >
                 {/* DivLeft */}
                 <motion.div
-                    className="w-full 2xl:gap-3 2xl:w-1/2 lg:w-1/2 flex flex-col py-4 px-4"
+                    className="w-full 2xl:gap-32xl:w-1/2 lg:w-1/2 flex flex-col py-4 px-4"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
@@ -83,7 +83,7 @@ const BgNew = () => {
                 </motion.div>
                 {/* DivRight */}
                 <motion.div
-                    className="w-full 2xl:w-1/2 lg:w-1/2 my-4 flex justify-center pb-2"
+                    className="w-full 2xl:w-1/2 lg:w-1/2 flex justify-center py-4 pb-2"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.3 }}
