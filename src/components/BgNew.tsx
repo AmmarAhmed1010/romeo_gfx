@@ -83,7 +83,7 @@ const BgNew = () => {
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
-                    variants={slideLeft}
+                    variants={slideUp}
                     className="w-full 2xl:w-1/2 lg:w-1/2 flex justify-center py-4 pb-2"
 
                 >
