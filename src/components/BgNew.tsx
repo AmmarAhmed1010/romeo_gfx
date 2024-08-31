@@ -10,66 +10,62 @@ const BgNew = () => {
     const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
     const contactMessage = "Hello, I'm interested in your services.";
 
-    // Define animation variants
-    const fadeInUpVariants = {
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeInOut' } }
+    const slideLeft = {
+        hidden: { opacity: 0, x: -100 },
+        visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
+    };
+
+    const slideUp = {
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
     };
 
     return (
         <div className="h-full 2xl:h-screen bg-black">
-            <BackgroundBeams />
             {/* Header */}
+
             <motion.div
-                className="text-white text-3xl 2xl:text-4xl font-serif 2xl:justify-start 2xl:px-20 flex justify-center py-4"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                variants={fadeInUpVariants}
+                variants={slideUp}
+                className="text-white text-3xl 2xl:text-5xl font-extrabold font-serif 2xl:px-20 flex justify-center py-4"
             >
                 <h1>Romeo</h1>
                 <span className="text-red-700">GFX</span>
             </motion.div>
             {/* Main */}
-            <motion.div
-                className="flex flex-col-reverse lg:flex-row 2xl:h-full lg:px-10 2xl:pb-20 2xl:flex-row 2xl:items-center"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
-                variants={fadeInUpVariants}
-            >
+            <div className="flex flex-col-reverse lg:flex-row 2xl:h-full lg:px-10 2xl:pb-20 2xl:flex-row 2xl:items-center">
                 {/* DivLeft */}
-                <motion.div
-                    className="w-full 2xl:gap-32xl:w-1/2 lg:w-1/2 flex flex-col py-4 px-4"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                    variants={fadeInUpVariants}
-                >
+                <div className="2xl:gap-3 2xl:w-1/2 lg:w-1/2 flex flex-col py-4 px-4">
                     <motion.div
-                        className="flex gap-2 2xl:gap-3 mb-2 2xl:text-7xl lg:text-5xl text-3xl"
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
-                        variants={fadeInUpVariants}
+                        variants={slideLeft}
+                        className="flex gap-2 2xl:gap-3 mb-2 2xl:text-7xl lg:text-5xl text-3xl"
                     >
                         <h1 className="text-white font-serif">I Am</h1>
                         <span className="font-serif font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white">
                             RomeoGFX
                         </span>
                     </motion.div>
+
                     <div>
                         <FlipText />
                     </div>
-                    <div>
-                        <GenerateText />
-                    </div>
+
                     <motion.div
-                        className="my-4"
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
-                        variants={fadeInUpVariants}
+                        variants={slideUp}
+
+                    >
+                        <GenerateText />
+                    </motion.div>
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={slideUp}
+                        className="my-4"
                     >
                         <a
                             href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
@@ -80,14 +76,15 @@ const BgNew = () => {
                             Hire Me
                         </a>
                     </motion.div>
-                </motion.div>
+
+                </div>
                 {/* DivRight */}
                 <motion.div
-                    className="w-full 2xl:w-1/2 lg:w-1/2 flex justify-center py-4 pb-2"
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                    variants={fadeInUpVariants}
+                    variants={slideLeft}
+                    className="w-full 2xl:w-1/2 lg:w-1/2 flex justify-center py-4 pb-2"
+
                 >
                     <Image
                         src="/imgprofile.png"
@@ -98,7 +95,9 @@ const BgNew = () => {
                         sizes="(max-width: 768px) 200px, (max-width: 1024px) 240px, 280px"
                     />
                 </motion.div>
-            </motion.div>
+
+
+            </div>
         </div>
     );
 }
