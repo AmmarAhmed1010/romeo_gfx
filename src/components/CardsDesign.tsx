@@ -34,7 +34,7 @@ const CardsDesign = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
           <motion.div
@@ -100,7 +100,7 @@ const CardsDesign = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
           <motion.div
@@ -166,7 +166,7 @@ const CardsDesign = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
           <motion.div

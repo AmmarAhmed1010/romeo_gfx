@@ -43,7 +43,9 @@ const PricingSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item, index) => (
             <motion.div
-          
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
              key={index}
               className="bg-red-800 p-6 rounded-xl shadow-md text-center cursor-pointer relative moving-border"
           
