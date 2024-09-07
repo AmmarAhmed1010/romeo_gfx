@@ -32,24 +32,20 @@ const CardsDesign = () => {
       <div className="flex flex-col md:flex-row font-serif justify-center items-center space-y-8 md:space-y-0 md:space-x-4 p-4">
         {/* Card 1 */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+         initial="hidden"
+         whileInView="visible"
+         variants={slideLeft}
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+            
           >
             <h1 className="text-center text-white text-2xl font-bold">
               Basic Plan
             </h1>
           </motion.div>
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+           
             className='flex items-center gap-2'
           >
             <h4 className='text-xl text-white'>
@@ -60,9 +56,7 @@ const CardsDesign = () => {
             </span>
           </motion.div>
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+            
             className="content text-white space-y-2 my-4"
           >
             {[
@@ -80,9 +74,7 @@ const CardsDesign = () => {
             ))}
           </motion.div>
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+           
             className="w-full flex justify-center"
           >
             <a
@@ -98,24 +90,20 @@ const CardsDesign = () => {
 
         {/* Card 2 */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+        initial="hidden"
+        whileInView="visible"
+        variants={slideLeft}
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+        
           >
             <h1 className="text-center text-white text-2xl font-bold">
               Standard Plan
             </h1>
           </motion.div>
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+            
             className='flex items-center gap-2'
           >
             <h4 className='text-xl text-white'>
@@ -126,9 +114,7 @@ const CardsDesign = () => {
             </span>
           </motion.div>
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+        
             className="content text-white space-y-2 my-4"
           >
             {[
@@ -146,9 +132,7 @@ const CardsDesign = () => {
             ))}
           </motion.div>
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+           
             className="w-full flex justify-center"
           >
             <a
@@ -164,24 +148,20 @@ const CardsDesign = () => {
 
         {/* Card 3 */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
+         initial="hidden"
+         whileInView="visible"
+         variants={slideLeft}
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+    
           >
             <h1 className="text-center text-white text-2xl font-bold">
               Premium Plan
             </h1>
           </motion.div>
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+          
             className='flex items-center gap-2'
           >
             <h4 className='text-xl text-white'>
@@ -192,9 +172,7 @@ const CardsDesign = () => {
             </span>
           </motion.div>
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+           
             className="content text-white space-y-2 my-4"
           >
             {[
@@ -212,9 +190,7 @@ const CardsDesign = () => {
             ))}
           </motion.div>
           <motion.div
-            initial="hidden"
-            whileInView="visible"
-            variants={slideLeft}
+          
             className="w-full flex justify-center"
           >
             <a
