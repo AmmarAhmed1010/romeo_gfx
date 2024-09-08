@@ -1,8 +1,7 @@
 "use client";
-import React from 'react';
-import { motion } from 'framer-motion';
-// import './NewPricingSection.css'; // Import CSS file for border animation
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const NewPricingSection = () => {
   const items = [
@@ -16,42 +15,30 @@ const NewPricingSection = () => {
     { title: "Jersey Shirts", price: "1200", description: "Custom jerseys for your team." },
   ];
 
-  // Reveal animation when scrolling, runs one time
-  const revealVariant = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-        once: true,
-      },
-    },
-  };
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of the animation
+       // Animation should happen only once
+    });
+  }, []);
 
   return (
     <section className="w-full h-full py-20 bg-black">
       <div className="mx-auto px-6 font-serif md:px-8">
         {/* Section heading */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={revealVariant}
-        >
+        <div data-aos="fade-up">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center tracking-wide">
             Our <span className="text-red-600">Price</span> List
           </h2>
-        </motion.div>
+        </div>
 
         {/* Pricing items grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {items.map((item, index) => (
-            <motion.div
+            <div
               key={index}
-              initial="hidden"
-              whileInView="visible"
-              variants={revealVariant}
+              data-aos="fade-up-right" // AOS zoom-in-up effect
               className="border-gradient-animation text-center"
             >
               {/* Inner content container */}
@@ -62,16 +49,16 @@ const NewPricingSection = () => {
                 </h3>
                 
                 {/* Description */}
-                <p className="text-sm text-gray-300 mb-2">
+                <p className="text-sm md:text-lg text-gray-300 mb-2">
                   {item.description}
                 </p>
                 
                 {/* Price */}
                 <p className="text-xl md:text-2xl font-bold text-red-700">
-                 <span className='text-white'>Rs:</span> {item.price}
+                  <span className='text-white'>Rs:</span> {item.price}
                 </p>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

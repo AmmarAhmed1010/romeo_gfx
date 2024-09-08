@@ -1,64 +1,40 @@
-"use client"
-import React from 'react';
-import { motion } from 'framer-motion';
+"use client";
+import React, { useEffect } from 'react';
+import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos'; // Import AOS library
 
 const CardsDesign = () => {
   const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
   const contactMessage = "Hello, I'm interested in your services.";
 
-  const slideLeft = {
-    hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
-  };
-  
-  const slideUp = {
-    hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
-  };
+  useEffect(() => {
+    AOS.init({ duration: 1000}); // Initialize AOS with a 1-second animation
+  }, []);
 
   return (
-    <div className='h-full flex bg-black flex-col w-full'>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        variants={slideUp}
-        className='text-center'
-      >
+    <div className='flex bg-black flex-col w-full'>
+      <div
+       data-aos="fade-right" 
+      className='text-center'>
         <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white font-sans mb-8 text-center">
           <span className="text-red-700">Pricing</span> Plan
         </h2>
-      </motion.div>
+      </div>
 
       <div className="flex flex-col md:flex-row font-serif justify-center items-center space-y-8 md:space-y-0 md:space-x-4 p-4">
         {/* Card 1 */}
-        <motion.div
-         initial="hidden"
-         whileInView="visible"
-         variants={slideLeft}
+        <div 
+          data-aos="fade-up-right" // Scroll reveal animation
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
-          <motion.div
-            
-          >
-            <h1 className="text-center text-white text-2xl font-bold">
-              Basic Plan
-            </h1>
-          </motion.div>
-          <motion.div
-           
-            className='flex items-center gap-2'
-          >
-            <h4 className='text-xl text-white'>
-              Starts at
-            </h4>
-            <span className='text-2xl font-bold text-yellow-400'>
-              Rs: 1500
-            </span>
-          </motion.div>
-          <motion.div
-            
-            className="content text-white space-y-2 my-4"
-          >
+          <h1 className="text-center text-white text-2xl font-bold">
+            Basic Plan
+          </h1>
+          <div className='flex items-center gap-2'>
+            <h4 className='text-xl text-white'>Starts at</h4>
+            <span className='text-2xl font-bold text-yellow-400'>Rs: 1500</span>
+          </div>
+          <div className="content text-white space-y-2 my-4">
             {[
               '2 HD Thumbnail',
               '1 Logo',
@@ -72,11 +48,8 @@ const CardsDesign = () => {
                 {item}
               </h4>
             ))}
-          </motion.div>
-          <motion.div
-           
-            className="w-full flex justify-center"
-          >
+          </div>
+          <div className="w-full flex justify-center">
             <a
               href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
               target="_blank"
@@ -85,38 +58,22 @@ const CardsDesign = () => {
             >
               Choose Plan
             </a>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Card 2 */}
-        <motion.div
-        initial="hidden"
-        whileInView="visible"
-        variants={slideLeft}
+        <div 
+          data-aos="fade-up-right"
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
-          <motion.div
-        
-          >
-            <h1 className="text-center text-white text-2xl font-bold">
-              Standard Plan
-            </h1>
-          </motion.div>
-          <motion.div
-            
-            className='flex items-center gap-2'
-          >
-            <h4 className='text-xl text-white'>
-              Starts at
-            </h4>
-            <span className='text-2xl font-bold text-yellow-400'>
-              Rs: 2300
-            </span>
-          </motion.div>
-          <motion.div
-        
-            className="content text-white space-y-2 my-4"
-          >
+          <h1 className="text-center text-white text-2xl font-bold">
+            Standard Plan
+          </h1>
+          <div className='flex items-center gap-2'>
+            <h4 className='text-xl text-white'>Starts at</h4>
+            <span className='text-2xl font-bold text-yellow-400'>Rs: 2300</span>
+          </div>
+          <div className="content text-white space-y-2 my-4">
             {[
               '2 HD Thumbnail',
               '1 Logo',
@@ -130,11 +87,8 @@ const CardsDesign = () => {
                 {item}
               </h4>
             ))}
-          </motion.div>
-          <motion.div
-           
-            className="w-full flex justify-center"
-          >
+          </div>
+          <div className="w-full flex justify-center">
             <a
               href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
               target="_blank"
@@ -143,38 +97,22 @@ const CardsDesign = () => {
             >
               Choose Plan
             </a>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Card 3 */}
-        <motion.div
-         initial="hidden"
-         whileInView="visible"
-         variants={slideLeft}
+        <div 
+          data-aos="fade-right"
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
-          <motion.div
-    
-          >
-            <h1 className="text-center text-white text-2xl font-bold">
-              Premium Plan
-            </h1>
-          </motion.div>
-          <motion.div
-          
-            className='flex items-center gap-2'
-          >
-            <h4 className='text-xl text-white'>
-              Starts at
-            </h4>
-            <span className='text-2xl font-bold text-yellow-400'>
-              Rs: 2800
-            </span>
-          </motion.div>
-          <motion.div
-           
-            className="content text-white space-y-2 my-4"
-          >
+          <h1 className="text-center text-white text-2xl font-bold">
+            Premium Plan
+          </h1>
+          <div className='flex items-center gap-2'>
+            <h4 className='text-xl text-white'>Starts at</h4>
+            <span className='text-2xl font-bold text-yellow-400'>Rs: 2800</span>
+          </div>
+          <div className="content text-white space-y-2 my-4">
             {[
               '3 HD Thumbnail',
               '1 Logo',
@@ -188,11 +126,8 @@ const CardsDesign = () => {
                 {item}
               </h4>
             ))}
-          </motion.div>
-          <motion.div
-          
-            className="w-full flex justify-center"
-          >
+          </div>
+          <div className="w-full flex justify-center">
             <a
               href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
               target="_blank"
@@ -201,8 +136,8 @@ const CardsDesign = () => {
             >
               Choose Plan
             </a>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
     </div>
   );

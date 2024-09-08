@@ -51,5 +51,11 @@
   border-radius: 8px; /* Match the border radius of the outer container */
   /* Light shadow for better separation */
 }
+.content1 {
+  background-color:black;
+  border-radius: 8px; /* Dark background for better text visibility */
+  /* Match the border radius of the outer container */
+  /* Light shadow for better separation */
+}
 
 
