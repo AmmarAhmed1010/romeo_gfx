@@ -7,7 +7,6 @@
   object-fit: cover;
   box-shadow: 0 0 2.5rem #c53030; /* Tailwind's red-700 color */
 }
-
 .img:hover {
   box-shadow: 
       0 0 2.5rem #c53030,  /* Tailwind's red-700 color */
@@ -15,5 +14,42 @@
       0 0 10rem #c53030;   /* Tailwind's red-700 color */
 }
 .custom-underline {
-  text-decoration-color: #0a0a0a; /* Replace with your desired color */
+  text-decoration-color: black; /* Replace with your desired color */
 }
+
+
+
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Container for the gradient border */
+.border-gradient-animation {
+  position: relative;
+  padding: 2px; /* Adjust the padding to create the border effect */
+  border-radius: 8px; /* Adjust for rounded corners */
+  background: linear-gradient(45deg, black, red, black,red);
+  background-size: 400% 400%;
+  animation: borderAnimation 5s linear infinite;
+}
+
+
+/* Inner content container */
+.content2 {
+  position: relative;
+  background-color:black; /* Dark background for better text visibility */
+  padding: 20px;
+  border-radius: 8px; /* Match the border radius of the outer container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for better separation */
+}
+
+
