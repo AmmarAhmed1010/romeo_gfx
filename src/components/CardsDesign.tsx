@@ -24,7 +24,7 @@ const CardsDesign = () => {
       <div className="flex flex-col md:flex-row font-serif justify-center items-center space-y-8 md:space-y-0 md:space-x-4 p-4">
         {/* Card 1 */}
         <div 
-          data-aos="fade-up-right" // Scroll reveal animation
+          data-aos="fade-right" // Scroll reveal animation
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
           <h1 className="text-center text-white text-2xl font-bold">
@@ -63,7 +63,7 @@ const CardsDesign = () => {
 
         {/* Card 2 */}
         <div 
-          data-aos="fade-up-right"
+          data-aos="fade-right"
           className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
           <h1 className="text-center text-white text-2xl font-bold">
