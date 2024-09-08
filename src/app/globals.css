@@ -40,7 +40,7 @@
   background: linear-gradient(45deg, yellow, red, black,red);
   background-size: 400% 400%;
   animation: borderAnimation 3s linear infinite;
-  box-shadow: 0px 5px 10px red;
+  box-shadow: 0 5px 10px orange;
 }
 
 
@@ -50,7 +50,7 @@
   background-color:black; /* Dark background for better text visibility */
   padding: 20px;
   border-radius: 8px; /* Match the border radius of the outer container */
-  box-shadow: 0 5px 10px orange; /* Light shadow for better separation */
+  box-shadow: 0 5px 10px orangered; /* Light shadow for better separation */
 }
 
 

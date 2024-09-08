@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { BackgroundBeams } from "./ui/background-beams";
 import GenerateText from "./GenerateText";
 import FlipText from "./FlipText";
 import Image from "next/image";
@@ -22,7 +21,7 @@ const BgNew = () => {
 
     return (
         <div className="h-full 2xl:h-screen bg-black">
-            {/* <BackgroundBeams /> */}
+        
             {/* Header */}
 
             <motion.div
