@@ -31,8 +31,8 @@ const NewPricingSection = () => {
   };
 
   return (
-    <section className="flex justify-center w-full px-2 md:px-6 py-16 bg-black">
-      <div className="font-serif px-4 w-full">
+    <section className="w-full h-full py-20 bg-black">
+      <div className="mx-auto px-6 font-serif md:px-8">
         {/* Section heading */}
         <motion.div
           initial="hidden"
