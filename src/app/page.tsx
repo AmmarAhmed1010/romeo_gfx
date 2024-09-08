@@ -12,7 +12,7 @@ export default function Home() {
       
       <BgNew />
       <MultipleCards /> 
-      <PricingSection />
+      {/* <PricingSection /> */}
       <NewPricingSection/>
       <CardsDesign />
       

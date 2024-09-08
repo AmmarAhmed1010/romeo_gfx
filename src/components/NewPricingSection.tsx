@@ -62,7 +62,7 @@ const NewPricingSection = () => {
                 </h3>
                 
                 {/* Description */}
-                <p className="text-lg text-gray-300 mb-2">
+                <p className="text-sm text-gray-300 mb-2">
                   {item.description}
                 </p>
                 
