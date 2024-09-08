@@ -37,9 +37,10 @@
   position: relative;
   padding: 2px; /* Adjust the padding to create the border effect */
   border-radius: 8px; /* Adjust for rounded corners */
-  background: linear-gradient(45deg, black, red, black,red);
+  background: linear-gradient(45deg, yellow, red, black,red);
   background-size: 400% 400%;
-  animation: borderAnimation 5s linear infinite;
+  animation: borderAnimation 3s linear infinite;
+  box-shadow: 0px 5px 10px red;
 }
 
 
@@ -49,7 +50,7 @@
   background-color:black; /* Dark background for better text visibility */
   padding: 20px;
   border-radius: 8px; /* Match the border radius of the outer container */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for better separation */
+  box-shadow: 0 5px 10px orange; /* Light shadow for better separation */
 }
 
 

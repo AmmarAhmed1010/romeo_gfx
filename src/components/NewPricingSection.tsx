@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const NewPricingSection = () => {
   const items = [
-    { title: "Thumbnail Design", price: "250", description: "Eye catching thumbnails for your videos." },
+    { title: "Thumbnail Design", price: "250", description: "Thumbnails for your videos." },
     { title: "Logo Design", price: "400", description: "Professional logos for your brand." },
     { title: "Banner Design", price: "450", description: "Custom banners for any platform." },
     { title: "Overlay Design", price: "500 / 1500", description: "Perfect overlays for your streams." },
@@ -31,8 +31,8 @@ const NewPricingSection = () => {
   };
 
   return (
-    <section className="w-full flex justify-center  h-full py-16 bg-black">
-      <div className="px-4 font-serif md:px-8 max-w-7xl">
+    <section className="w-full flex justify-center h-full py-16 bg-black">
+      <div className="font-serif px-4 max-w-7xl">
         {/* Section heading */}
         <motion.div
           initial="hidden"
@@ -62,7 +62,7 @@ const NewPricingSection = () => {
                 </h3>
                 
                 {/* Description */}
-                <p className="text-lg font-semibold text-gray-300 mb-2">
+                <p className="text-lg text-gray-300 mb-2">
                   {item.description}
                 </p>
                 
