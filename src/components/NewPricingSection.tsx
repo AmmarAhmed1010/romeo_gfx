@@ -44,7 +44,8 @@ const NewPricingSection = () => {
               {/* Inner content container */}
               <div className="content2">
                 {/* Title */}
-                <h3 className="text-2xl md:text-3xl font-semibold text-red-700 mb-3">
+                
+                <h3 className="text-2xl md:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500  to-yellow-500 mb-3">
                   {item.title}
                 </h3>
                 

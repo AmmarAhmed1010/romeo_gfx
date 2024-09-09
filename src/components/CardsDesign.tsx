@@ -17,7 +17,7 @@ const CardsDesign = () => {
        data-aos="fade-right" 
       className='text-center'>
         <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white font-sans mb-8 text-center">
-          <span className="text-red-700">Pricing</span> Plan
+         Our <span className="text-red-700">Pricing</span> Plan
         </h2>
       </div>
 
@@ -25,14 +25,18 @@ const CardsDesign = () => {
         {/* Card 1 */}
         <div 
           data-aos="fade-right" // Scroll reveal animation
-          className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
+          className="border-gradient-animation shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
-          <h1 className="text-center text-white text-2xl font-bold">
-            Basic Plan
-          </h1>
+          <div className="content2">
+            <div className='w-full text-center'>
+          <span className="font-serif text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500  to-yellow-500">
+  Basic Plan
+</span>
+</div>
+
           <div className='flex items-center gap-2'>
             <h4 className='text-xl text-white'>Starts at</h4>
-            <span className='text-2xl font-bold text-yellow-400'>Rs: 1500</span>
+            <span className='text-2xl font-bold text-red-700'>Rs: 1500</span>
           </div>
           <div className="content text-white space-y-2 my-4">
             {[
@@ -54,24 +58,26 @@ const CardsDesign = () => {
               href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-105 inline-block text-center"
+              className="bg-red-700 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-105 inline-block text-center"
             >
               Choose Plan
             </a>
+          </div>
           </div>
         </div>
 
         {/* Card 2 */}
         <div 
           data-aos="fade-right"
-          className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
+          className="border-gradient-animation shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
+          <div className="content2">
           <h1 className="text-center text-white text-2xl font-bold">
             Standard Plan
           </h1>
           <div className='flex items-center gap-2'>
             <h4 className='text-xl text-white'>Starts at</h4>
-            <span className='text-2xl font-bold text-yellow-400'>Rs: 2300</span>
+            <span className='text-2xl font-bold text-red-700'>Rs: 2300</span>
           </div>
           <div className="content text-white space-y-2 my-4">
             {[
@@ -93,24 +99,26 @@ const CardsDesign = () => {
               href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-105 inline-block text-center"
+              className="bg-red-700 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-105 inline-block text-center"
             >
               Choose Plan
             </a>
+          </div>
           </div>
         </div>
 
         {/* Card 3 */}
         <div 
           data-aos="fade-right"
-          className="bg-red-800 shadow-lg rounded-3xl p-6 max-w-sm w-full"
+          className="border-gradient-animation shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
+          <div className="content2">
           <h1 className="text-center text-white text-2xl font-bold">
             Premium Plan
           </h1>
           <div className='flex items-center gap-2'>
             <h4 className='text-xl text-white'>Starts at</h4>
-            <span className='text-2xl font-bold text-yellow-400'>Rs: 2800</span>
+            <span className='text-2xl font-bold text-red-700'>Rs: 2800</span>
           </div>
           <div className="content text-white space-y-2 my-4">
             {[
@@ -132,10 +140,11 @@ const CardsDesign = () => {
               href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg inline-block text-center"
+              className="bg-red-700 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-colors duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg inline-block text-center"
             >
               Choose Plan
             </a>
+          </div>
           </div>
         </div>
       </div>
