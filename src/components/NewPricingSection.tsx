@@ -27,7 +27,7 @@ const NewPricingSection = () => {
     <section className="w-full h-full py-20 bg-black">
       <div className="mx-auto px-6 font-serif md:px-8">
         {/* Section heading */}
-        <div data-aos="fade-up">
+        <div data-aos="zoom-in">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center tracking-wide">
             Our <span className="text-red-600">Price</span> List
           </h2>

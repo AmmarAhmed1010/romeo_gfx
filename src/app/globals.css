@@ -19,7 +19,6 @@
 
 
 
-
 @keyframes borderAnimation {
   0% {
     background-position: 0% 50%;
@@ -37,9 +36,10 @@
   position: relative;
   padding: 2px; /* Adjust the padding to create the border effect */
   border-radius: 8px; /* Adjust for rounded corners */
-  background: linear-gradient(45deg, yellow, red, black,red);
+  background: linear-gradient(45deg, yellow, red, black, red);
   background-size: 400% 400%;
   animation: borderAnimation 5s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7), 0 0 15px rgba(255, 0, 0, 0.5); /* Red glow effect */
 }
 
 
