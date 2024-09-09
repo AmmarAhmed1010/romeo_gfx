@@ -29,14 +29,14 @@ const CardsDesign = () => {
         >
           <div className="content2">
             <div className='w-full text-center'>
-          <span className="font-serif text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500  to-yellow-500">
+          <span className="font-serif text-3xl font-bold bg-clip-text text-red-600">
   Basic Plan
 </span>
 </div>
 
           <div className='flex items-center gap-2'>
             <h4 className='text-xl text-white'>Starts at</h4>
-            <span className='text-2xl font-bold text-red-700'>Rs: 1500</span>
+            <span className='text-2xl font-bold text-yellow-500'>Rs: 1500</span>
           </div>
           <div className="content text-white space-y-2 my-4">
             {[
@@ -73,14 +73,14 @@ const CardsDesign = () => {
         >
           <div className="content2">
           <div className='w-full text-center'>
-          <span className="font-serif text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500  to-yellow-500">
+          <span className="font-serif text-3xl font-bold bg-clip-text text-red-600">
   Standard Plan
 </span>
 </div>
 
           <div className='flex items-center gap-2'>
             <h4 className='text-xl text-white'>Starts at</h4>
-            <span className='text-2xl font-bold text-red-700'>Rs: 2300</span>
+            <span className='text-2xl font-bold text-yellow-500'>Rs: 2300</span>
           </div>
           <div className="content text-white space-y-2 my-4">
             {[
@@ -117,14 +117,14 @@ const CardsDesign = () => {
         >
           <div className="content2">
           <div className='w-full text-center'>
-          <span className="font-serif text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500  to-yellow-500">
+          <span className="font-serif text-3xl font-bold bg-clip-text text-red-600">
   Premium Plan
 </span>
 </div>
 
           <div className='flex items-center gap-2'>
             <h4 className='text-xl text-white'>Starts at</h4>
-            <span className='text-2xl font-bold text-red-700'>Rs: 2800</span>
+            <span className='text-2xl font-bold text-yellow-500'>Rs: 2800</span>
           </div>
           <div className="content text-white space-y-2 my-4">
             {[
