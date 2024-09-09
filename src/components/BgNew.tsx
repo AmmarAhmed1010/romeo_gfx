@@ -9,12 +9,13 @@ import 'aos/dist/aos.css'; // Import AOS styles
 
 const BgNew = () => {
       // Initialize AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Duration of the animation
-       // Animation should happen only once
-    });
-  }, []);
+      useEffect(() => {
+        AOS.init({
+            duration: 1000, // Duration of the animation
+            once: false,    // Animation should trigger each time the element scrolls into view
+            offset: 100      // Offset to trigger animations earlier or later
+        });
+    }, []);
   
     const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
     const contactMessage = "Hello, I'm interested in your services.";
@@ -23,12 +24,6 @@ const BgNew = () => {
         hidden: { opacity: 0, x: -100 },
         visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
     };
-
-    const slideUp = {
-        hidden: { opacity: 0, y: 100 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
-    };
-
     return (
         <div className="h-full 2xl:h-screen bg-black md:px-16">
         
@@ -64,11 +59,13 @@ const BgNew = () => {
                     >
                         <GenerateText />
                     </motion.div>
-                    <div
-                       data-aos="zoom-up-right"
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        variants={slideLeft}
                         className="my-4"
                     >
-                        <a
+                        <a 
                             href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -76,7 +73,7 @@ const BgNew = () => {
                         >
                             Hire Me
                         </a>
-                    </div>
+                    </motion.div>
 
                 </div>
                 {/* DivRight */}
