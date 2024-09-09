@@ -14,7 +14,7 @@ const CardsDesign = () => {
   return (
     <div className='flex bg-black flex-col w-full'>
       <div
-        data-aos="fade-right"
+        data-aos="zoom-in"
         className='text-center'>
         <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white font-sans mb-8 text-center">
           Our <span className="text-red-700">Pricing</span> Plan

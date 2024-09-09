@@ -1,11 +1,21 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import GenerateText from "./GenerateText";
 import FlipText from "./FlipText";
 import Image from "next/image";
 import { motion } from 'framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const BgNew = () => {
+      // Initialize AOS
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of the animation
+       // Animation should happen only once
+    });
+  }, []);
+  
     const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
     const contactMessage = "Hello, I'm interested in your services.";
 
@@ -20,14 +30,12 @@ const BgNew = () => {
     };
 
     return (
-        <div className="h-full 2xl:h-screen bg-black">
+        <div className="h-full 2xl:h-screen bg-black md:px-16">
         
             {/* Header */}
 
             <motion.div
-                initial="hidden"
-                whileInView="visible"
-                variants={slideUp}
+                data-aos="zoom-in"                 
                 className="text-white text-3xl 2xl:text-5xl font-extrabold font-serif 2xl:px-20 flex justify-center py-4"
             >
                 <h1>Romeo</h1>
@@ -38,9 +46,7 @@ const BgNew = () => {
                 {/* DivLeft */}
                 <div className="2xl:gap-3 2xl:w-1/2 lg:w-1/2 flex flex-col py-4 px-4">
                     <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        variants={slideLeft}
+                        data-aos="fade-up-right"
                         className="flex gap-2 2xl:gap-3 mb-2 2xl:text-7xl lg:text-5xl text-3xl"
                     >
                         <h1 className="text-white font-serif">I Am</h1>
@@ -49,22 +55,17 @@ const BgNew = () => {
                         </span>
                     </motion.div>
 
-                    <div>
+                    <div data-aos="fade-up-right">
                         <FlipText />
                     </div>
 
                     <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        variants={slideUp}
-
+                       data-aos="fade-up-right"
                     >
                         <GenerateText />
                     </motion.div>
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        variants={slideUp}
+                    <div
+                       data-aos="zoom-up-right"
                         className="my-4"
                     >
                         <a
@@ -75,15 +76,13 @@ const BgNew = () => {
                         >
                             Hire Me
                         </a>
-                    </motion.div>
+                    </div>
 
                 </div>
                 {/* DivRight */}
                 <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    variants={slideUp}
-                    className="w-full 2xl:w-1/2 lg:w-1/2 flex justify-center py-4 pb-2"
+                    data-aos="fade-right"
+                    className="w-full 2xl:w-1/2 lg:w-1/2 flex justify-center md:justify-end py-4 pb-2"
 
                 >
                     <Image
