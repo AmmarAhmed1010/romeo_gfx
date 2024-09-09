@@ -72,9 +72,12 @@ const CardsDesign = () => {
           className="border-gradient-animation shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
           <div className="content2">
-          <h1 className="text-center text-white text-2xl font-bold">
-            Standard Plan
-          </h1>
+          <div className='w-full text-center'>
+          <span className="font-serif text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500  to-yellow-500">
+  Standard Plan
+</span>
+</div>
+
           <div className='flex items-center gap-2'>
             <h4 className='text-xl text-white'>Starts at</h4>
             <span className='text-2xl font-bold text-red-700'>Rs: 2300</span>
@@ -113,9 +116,12 @@ const CardsDesign = () => {
           className="border-gradient-animation shadow-lg rounded-3xl p-6 max-w-sm w-full"
         >
           <div className="content2">
-          <h1 className="text-center text-white text-2xl font-bold">
-            Premium Plan
-          </h1>
+          <div className='w-full text-center'>
+          <span className="font-serif text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500  to-yellow-500">
+  Premium Plan
+</span>
+</div>
+
           <div className='flex items-center gap-2'>
             <h4 className='text-xl text-white'>Starts at</h4>
             <span className='text-2xl font-bold text-red-700'>Rs: 2800</span>
