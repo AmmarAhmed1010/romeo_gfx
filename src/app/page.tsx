@@ -1,5 +1,6 @@
 import BgNew from "@/components/BgNew";
 import CardsDesign from "@/components/CardsDesign";
+import Footer from "@/components/Footer";
 import MultipleCards from "@/components/MultipleCards";
 import NewPricingPlan from "@/components/NewPricingPlan";
 import NewPricingSection from "@/components/NewPricingSection";
@@ -17,6 +18,7 @@ export default function Home() {
       <NewPricingSection/>
       {/* <NewPricingPlan/> */}
       <CardsDesign />
+      <Footer/>
       
     </>
   );
