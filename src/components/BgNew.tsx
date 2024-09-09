@@ -25,7 +25,7 @@ const BgNew = () => {
         visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
     };
     return (
-        <div className="h-full 2xl:h-screen bg-black md:px-16">
+        <div className="h-full 2xl:h-screen bg-black lg:px-8 md:px-16">
         
             {/* Header */}
 
@@ -79,7 +79,7 @@ const BgNew = () => {
                 {/* DivRight */}
                 <motion.div
                     data-aos="fade-right"
-                    className="w-full 2xl:w-1/2 lg:w-1/2 flex justify-center md:justify-end py-4 pb-2"
+                    className="w-full 2xl:w-1/2 lg:w-1/2 flex justify-center md:justify-center py-4 pb-2"
 
                 >
                     <Image

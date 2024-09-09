@@ -25,10 +25,10 @@ const NewPricingSection = () => {
 
   return (
     <section className="w-full h-full py-20 bg-black">
-      <div className="mx-auto px-6 font-serif md:px-8">
+      <div className="mx-auto px-4 font-serif">
         {/* Section heading */}
         <div data-aos="zoom-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center tracking-wide">
+          <h2 className="text-4xl font-bold text-white mb-12 text-center tracking-wide">
             Our <span className="text-red-600">Price</span> List
           </h2>
         </div>
@@ -42,10 +42,10 @@ const NewPricingSection = () => {
               className="border-gradient-animation text-center"
             >
               {/* Inner content container */}
-              <div className="content2">
+              <div className="content2 w-full h-full">
                 {/* Title */}
                 
-                <h3 className="text-2xl md:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500  to-yellow-500 mb-3">
+                <h3 className="text-2xl md:text-3xl lg:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-orange-500  to-yellow-500 mb-3">
                   {item.title}
                 </h3>
                 

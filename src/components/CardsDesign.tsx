@@ -16,7 +16,7 @@ const CardsDesign = () => {
       <div
         data-aos="zoom-in"
         className='text-center'>
-        <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white font-sans mb-8 text-center">
+        <h2 className="text-4xl font-bold text-white font-serif mb-8 text-center">
           Our <span className="text-red-700">Pricing</span> Plan
         </h2>
       </div>
@@ -29,7 +29,7 @@ const CardsDesign = () => {
         >
           <div className="content2">
             <div className='w-full text-center'>
-              <span className="font-serif text-3xl font-bold bg-clip-text text-red-600">
+              <span className="font-serif text-3xl md:text-2xl font-bold bg-clip-text text-red-600">
                 Basic Plan
               </span>
             </div>
@@ -73,7 +73,7 @@ const CardsDesign = () => {
         >
           <div className="content2">
             <div className='w-full text-center'>
-              <span className="font-serif text-3xl font-bold bg-clip-text text-red-600">
+              <span className="font-serif text-3xl md:text-2xl font-bold bg-clip-text text-red-600">
                 Standard Plan
               </span>
             </div>
@@ -117,7 +117,7 @@ const CardsDesign = () => {
         >
           <div className="content2">
             <div className='w-full text-center'>
-              <span className="font-serif text-3xl font-bold bg-clip-text text-red-600">
+              <span className="font-serif text-3xl md:text-2xl font-bold bg-clip-text text-red-600">
                 Premium Plan
               </span>
             </div>
