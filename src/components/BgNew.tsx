@@ -22,13 +22,8 @@ const BgNew = () => {
 
     const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
     const contactMessage = "Hello, I'm interested in your services.";
-
-    const slideLeft = {
-        hidden: { opacity: 0, x: -100 },
-        visible: { opacity: 1, x: 0, transition: { duration: 0.8 } }
-    };
     return (
-        <div className="bg-black overflow-hidden lg:px-8  md:px-16">
+        <div className="bg-black md:h-screen h-full overflow-hidden lg:px-8  md:px-16">
 
             {/* Header */}
 
