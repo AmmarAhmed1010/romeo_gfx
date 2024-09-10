@@ -18,18 +18,20 @@ export const TextGenerateEffect = ({
     const wordsArray = words.split(" ");
 
     useEffect(() => {
-        animate(
-            "span",
-            {
-                opacity: 1,
-                filter: filter ? "blur(0px)" : "none",
-            },
-            {
-                duration: duration,
-                delay: stagger(0.2),
-            }
-        );
-    }, [scope.current]);
+        if (scope.current) {
+            animate(
+                "span",
+                {
+                    opacity: 1,
+                    filter: filter ? "blur(0px)" : "none",
+                },
+                {
+                    duration: duration,
+                    delay: stagger(0.2),
+                }
+            );
+        }
+    }, [scope, animate, filter, duration]);
 
     const renderWords = () => {
         return (
@@ -51,7 +53,7 @@ export const TextGenerateEffect = ({
 
     return (
         <div className={cn(className)}>
-            <div className="mt-2 text-sm md:text-xl 2xl-text-2xl leading-snug tracking-wide">
+            <div className="mt-2 text-sm md:text-xl 2xl:text-2xl leading-snug tracking-wide">
                 {renderWords()}
             </div>
         </div>

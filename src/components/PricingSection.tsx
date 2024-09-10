@@ -25,24 +25,19 @@ const PricingSection = () => {
           initial="hidden"
           whileInView="visible"
           variants={slideUp}
-
-
         >
-
           <h2 className="text-3xl sm:text-3xl md:text-4xl font-bold text-white font-sans mb-12 text-center">
             Our <span className="text-red-700">Price</span> List
           </h2>
         </motion.div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item, index) => (
             <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, ease: "easeOut" }}
               key={index}
               className="bg-red-800 p-6 rounded-xl shadow-md text-center cursor-pointer relative moving-border"
-
             >
               <motion.div
               >
@@ -50,9 +45,7 @@ const PricingSection = () => {
                   {item.title}
                 </h3>
               </motion.div>
-
               <motion.div
-              
               >
                 <p className="text-base sm:text-lg md:text-xl text-white mb-4 relative z-10">
                   Perfect for YouTube and other platforms.
@@ -61,13 +54,7 @@ const PricingSection = () => {
                   {item.price}
                 </p>
               </motion.div>
-
-
-
-
             </motion.div>
-
-
           ))}
         </div>
       </div>
