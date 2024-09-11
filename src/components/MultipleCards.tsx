@@ -76,7 +76,7 @@ const DummyContent3 = () => {
   return (
     <div className="bg-black p-8 md:p-14 rounded-3xl mb-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-9 my-5">
-        {[...Array(11)].map((_, index) => (
+        {[...Array(16)].map((_, index) => (
           <Image
             key={index}
             src={`/logo${index + 1}.png`}
@@ -109,6 +109,24 @@ const DummyContent4 = () => {
     </div>
   );
 };
+const DummyContent5 = () => {
+  return (
+    <div className="bg-black p-8 md:p-14 rounded-3xl mb-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-9 my-5">
+        {[...Array(7)].map((_, index) => (
+          <Image
+            key={index}
+            src={`/banner${index + 1}.png`}
+            alt={`Logo illustration ${index + 1}`}
+            height="500"
+            width="500"
+            className="rounded-xl object-contain w-full h-full"
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 
 const data = [
@@ -125,10 +143,16 @@ const data = [
     content: <DummyContent2 />,
   },
   {
-    category: "Logo Banner",
+    category: "Logo",
     title: "Click to see more",
-    src: "/logo1.png",
+    src: "/logo12.png",
     content: <DummyContent3 />,
+  },
+  {
+    category: "Banner",
+    title: "Click to see more",
+    src: "/banner3.png",
+    content: <DummyContent5 />,
   },
   {
     category: "Overlay",
