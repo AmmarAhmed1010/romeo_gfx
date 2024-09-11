@@ -1,17 +1,27 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
-
+import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos';
 const MultipleCards = () => {
+
+  useEffect(() => {
+    AOS.init({
+        duration: 1000, // Duration of the animation
+        once: false,    // Animation should trigger each time the element scrolls into view
+        offset: 100      // Offset to trigger animations earlier or later
+    });
+}, []);
+
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
     // <section className="w-full  h-screen">
-      <div className="md:px-20 w-full bg-black 2xl-px-10 px-3">
-        <h2 className="text-3xl sm:text-3xl md:text-5xl px-4 font-bold text-red-600 font-sans mb-2">
+      <div className="w-full bg-black">
+        <h2  className="md:text-4xl text-3xl font-bold text-red-700 font-serif text-center tracking-wide">
           <span className="text-white">Explore</span> My <span className="text-white">Media</span> Collection
         </h2>
         <div>
@@ -31,7 +41,7 @@ const DummyContent1 = () => {
         {[...Array(15)].map((_, index) => (
           <Image
             key={index}
-            src={`/gaming${index + 1}.png`}
+            src={`/gaming/gaming${index + 1}.png`}
             alt={`Gaming illustration ${index + 1}`}
             height="500"
             width="500"
@@ -50,7 +60,7 @@ const DummyContent2 = () => {
         {[...Array(11)].map((_, index) => (
           <Image
             key={index}
-            src={`/irl${index + 1}.png`}
+            src={`/irl/irl${index + 1}.png`}
             alt={`IRL illustration ${index + 1}`}
             height="500"
             width="500"
@@ -69,7 +79,7 @@ const DummyContent3 = () => {
         {[...Array(11)].map((_, index) => (
           <Image
             key={index}
-            src={`/logo${index + 1}.png`}
+            src={`/logo/logo${index + 1}.png`}
             alt={`Logo illustration ${index + 1}`}
             height="500"
             width="500"
@@ -88,7 +98,7 @@ const DummyContent4 = () => {
         {[...Array(9)].map((_, index) => (
           <video
             key={index}
-            src={`/vid${index + 1}.mp4`}
+            src={`/overlay/vid${index + 1}.mp4`}
             controls
             height="500"
             width="500"

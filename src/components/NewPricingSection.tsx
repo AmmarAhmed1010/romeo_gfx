@@ -24,8 +24,8 @@ const NewPricingSection = () => {
   }, []);
 
   return (
-    <section className="w-full h-full py-20 bg-black">
-      <div className="mx-auto px-4 font-serif">
+    <section className="w-full h-full px-4 py-20 bg-black">
+      <div className="mx-auto font-serif">
         {/* Section heading */}
         <div data-aos="zoom-in">
           <h2 className="text-4xl font-bold text-white mb-12 text-center tracking-wide">

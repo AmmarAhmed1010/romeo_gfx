@@ -55,7 +55,6 @@ const BgNew = () => {
                             I specialize in <FlipWords words={words} /> <br />
                         </div>
                     </div>
-
                     <div
                         data-aos="fade-up-right"
                     >
@@ -73,28 +72,24 @@ const BgNew = () => {
                             Hire Me
                         </a>
                     </div>
-
                 </div>
                 {/* DivRight */}
                 <div
-  data-aos="fade-right"
-  className="w-full lg:w-1/2  b md:justify-center py-2 pb-2 overflow-hidden"
->
-  <div className="mx-auto w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] 2xl:w-[400px] 2xl:h-[400px]  relative">
-    <Image
-      src="/imgprofile.png"
-      alt="Profile Image"
-      className="border-gradient-animation2"
-      layout="fill" // Ensures the image fills the container and scales with it
-      objectFit="cover" // Ensures the image maintains aspect ratio and fills the container
-      priority={true} // Loads image faster since it's likely above the fold
-      sizes="(max-width: 768px) 200px, (max-width: 1024px) 350px, 400px"
-    />
-  </div>
-</div>
-
-
-
+                    data-aos="fade-right"
+                    className="w-full lg:w-1/2  b md:justify-center py-2 pb-2 overflow-hidden"
+                >
+                    <div className="mx-auto w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] 2xl:w-[400px] 2xl:h-[400px]  relative">
+                        <Image
+                            src="/imgprofile.png"
+                            alt="Profile Image"
+                            className="border-gradient-animation2"
+                            layout="fill" // Ensures the image fills the container and scales with it
+                            objectFit="cover" // Ensures the image maintains aspect ratio and fills the container
+                            priority={true} // Loads image faster since it's likely above the fold
+                            sizes="(max-width: 768px) 200px, (max-width: 1024px) 350px, 400px"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );
