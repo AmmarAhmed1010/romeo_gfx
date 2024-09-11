@@ -120,17 +120,17 @@ export default function Home() {
           </div>
 
           <div data-aos="fade-up-right" className="content  grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-            <img src="/gaming/gaming1.png" alt="Thumbnail 1" className="w-full h-auto border-gradient-animation3 shadow-lg" />
-            <img src="/gaming/gaming2.png" alt="Thumbnail 2" className="w-full h-auto border-gradient-animation3 shadow-lg" />
-            <img src="/gaming/gaming3.png" alt="Thumbnail 3" className="w-full h-auto border-gradient-animation3 shadow-lg" />
-            <img src="/gaming/gaming4.png" alt="Thumbnail 4" className="w-full h-auto border-gradient-animation3 shadow-lg" />
-            <img src="/gaming/gaming5.png" alt="Thumbnail 5" className="w-full h-auto border-gradient-animation3 shadow-lg" />
-            <img src="/gaming/gaming6.png" alt="Thumbnail 6" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+            <img src="/gaming1.png" alt="Thumbnail 1" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+            <img src="/gaming2.png" alt="Thumbnail 2" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+            <img src="/gaming3.png" alt="Thumbnail 3" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+            <img src="/gaming4.png" alt="Thumbnail 4" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+            <img src="/gaming5.png" alt="Thumbnail 5" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+            <img src="/gaming6.png" alt="Thumbnail 6" className="w-full h-auto border-gradient-animation3 shadow-lg" />
           </div>
         </div>
 
         {/* section */}
-        
+{/*         
         <div className="w-full py-10">
   <div data-aos="zoom-in" className="heading w-full flex justify-center items-center md:text-4xl text-3xl font-bold text-white font-serif mb-12">
     <h1 className="mr-2">Before</h1>
@@ -152,7 +152,7 @@ export default function Home() {
       <img src="/beforeafter/after1.png" alt="Thumbnail 2" className="w-full h-64 border-gradient-animation3 shadow-lg" />
     </div>
   </div>
-</div>
+</div> */}
 
         {/* section2 */}
         <section>

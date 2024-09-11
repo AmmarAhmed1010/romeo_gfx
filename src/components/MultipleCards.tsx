@@ -41,7 +41,7 @@ const DummyContent1 = () => {
         {[...Array(15)].map((_, index) => (
           <Image
             key={index}
-            src={`/gaming/gaming${index + 1}.png`}
+            src={`/gaming${index + 1}.png`}
             alt={`Gaming illustration ${index + 1}`}
             height="500"
             width="500"
@@ -60,7 +60,7 @@ const DummyContent2 = () => {
         {[...Array(11)].map((_, index) => (
           <Image
             key={index}
-            src={`/irl/irl${index + 1}.png`}
+            src={`/irl${index + 1}.png`}
             alt={`IRL illustration ${index + 1}`}
             height="500"
             width="500"
@@ -79,7 +79,7 @@ const DummyContent3 = () => {
         {[...Array(11)].map((_, index) => (
           <Image
             key={index}
-            src={`/logo/logo${index + 1}.png`}
+            src={`/logo${index + 1}.png`}
             alt={`Logo illustration ${index + 1}`}
             height="500"
             width="500"
@@ -98,7 +98,7 @@ const DummyContent4 = () => {
         {[...Array(9)].map((_, index) => (
           <video
             key={index}
-            src={`/overlay/vid${index + 1}.mp4`}
+            src={`/vid${index + 1}.mp4`}
             controls
             height="500"
             width="500"
