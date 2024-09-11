@@ -16,13 +16,18 @@ const Featuring = () => {
       <span className="text-red-700">Thumbnails</span>
     </div>
   
-    <div  className="content  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-      <img data-aos="fade-up-right" src="/gaming1.png" alt="Thumbnail 1" className="w-full h-auto border-gradient-animation3 shadow-lg" />
-      <img data-aos="fade-up-right" src="/gaming2.png" alt="Thumbnail 2" className="w-full h-auto border-gradient-animation3 shadow-lg" />
-      <img data-aos="fade-up-right" src="/gaming3.png" alt="Thumbnail 3" className="w-full h-auto border-gradient-animation3 shadow-lg" />
-      <img data-aos="fade-up-right" src="/gaming4.png" alt="Thumbnail 4" className="w-full h-auto border-gradient-animation3 shadow-lg" />
-      <img data-aos="fade-up-right" src="/gaming5.png" alt="Thumbnail 5" className="w-full h-auto border-gradient-animation3 shadow-lg" />
-      <img data-aos="fade-up-right" src="/gaming6.png" alt="Thumbnail 6" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+    <div  className="content  grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+      <img data-aos="fade-up-right" src="/feature/feature1.png" alt="Thumbnail 1" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+      <img data-aos="fade-up-right" src="/feature/feature11.png" alt="Thumbnail 2" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+      <img data-aos="fade-up-right" src="/feature/feature3.png" alt="Thumbnail 3" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+      <img data-aos="fade-up-right" src="/feature/feature4.png" alt="Thumbnail 4" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+      <img data-aos="fade-up-right" src="/feature/feature5.png" alt="Thumbnail 5" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+      <img data-aos="fade-up-right" src="/feature/feature10.png" alt="Thumbnail 6" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+      <img data-aos="fade-up-right" src="/feature/feature7.png" alt="Thumbnail 7" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+      <div className='hidden md:flex'>
+      <img data-aos="fade-up-right" src="/feature/feature12.png" alt="Thumbnail 8" className="w-full h-auto border-gradient-animation3 shadow-lg" />
+      </div>
+      <img data-aos="fade-up-right" src="/feature/feature9.png" alt="Thumbnail 9" className="w-full h-auto border-gradient-animation3 shadow-lg" />
     </div>
   </div>
   )
