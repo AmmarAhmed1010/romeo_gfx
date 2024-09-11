@@ -14,11 +14,10 @@ const BgNew = () => {
     // Initialize AOS
     useEffect(() => {
         AOS.init({
-            duration: 1000, // Duration of the animation
-            once: false,    // Animation should trigger each time the element scrolls into view
-            offset: 100      // Offset to trigger animations earlier or later
+          duration: 1000, // Duration of the animation
+           // Animation should happen only once
         });
-    }, []);
+      }, []);
 
     const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
     const contactMessage = "Hello, I'm interested in your services.";
@@ -28,19 +27,19 @@ const BgNew = () => {
             {/* Header */}
 
             <div
-                data-aos="fade-up-right"
+                data-aos="zoom-in"
                 className="text-white w-full text-3xl 2xl:text-5xl font-extrabold font-serif flex justify-center py-4"
             >
                 <h1>Romeo</h1>
                 <span className="text-red-700">GFX</span>
             </div>
             {/* Main */}
-            <div className="flex flex-col-reverse lg:flex-row 2xl:h-full lg:px-10 2xl:pb-20 2xl:flex-row 2xl:items-center">
+            <div className="flex text-center flex-col-reverse lg:flex-row 2xl:h-full lg:px-10 2xl:pb-20 2xl:flex-row 2xl:items-center">
                 {/* DivLeft */}
                 <div className="2xl:gap-3 2xl:w-1/2 lg:w-1/2 flex flex-col py-4 px-4">
                     <div
                         data-aos="fade-up-right"
-                        className="flex gap-2 2xl:gap-3 mb-2 2xl:text-7xl lg:text-5xl text-3xl"
+                        className="flex gap-2 justify-center 2xl:gap-3 mb-2 2xl:text-7xl lg:text-5xl text-3xl"
                     >
                         <h1 className="text-white font-serif">I Am</h1>
                         <span className="font-serif font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white">

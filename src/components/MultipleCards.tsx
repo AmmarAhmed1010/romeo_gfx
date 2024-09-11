@@ -20,8 +20,8 @@ const MultipleCards = () => {
 
   return (
     // <section className="w-full  h-screen">
-      <div className="w-full bg-black">
-        <h2  className="md:text-4xl text-3xl font-bold text-red-700 font-serif text-center tracking-wide">
+      <div className="w-full px-1 md:px-6 lg:px-16 bg-black">
+        <h2 data-aos="zoom-in" className="md:text-4xl text-3xl font-bold text-red-700 font-serif text-center tracking-wide">
           <span className="text-white">Explore</span> My <span className="text-white">Media</span> Collection
         </h2>
         <div>
