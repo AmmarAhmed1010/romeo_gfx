@@ -44,7 +44,7 @@ export default function Home() {
       <div className="w-full bg-black px-4 md:px-8 lg:px-16">
 
         {/* section1 */}
-        <section className="md:h-screen h-full">
+        <section className="md:h-screen text-center h-full">
           {/* Header */}
           <div
             data-aos="fade-up-right"
@@ -59,10 +59,10 @@ export default function Home() {
             <div className="2xl:gap-3 2xl:w-1/2 lg:w-1/2 flex flex-col py-4 px-4">
               <div
                 data-aos="fade-up-right"
-                className="flex gap-2 2xl:gap-3 mb-2 2xl:text-7xl lg:text-5xl text-3xl"
+                className="flex gap-2 2xl:gap-3 mb-2 justify-center 2xl:text-7xl lg:text-5xl text-3xl"
               >
                 <h1 className="text-white font-serif">I Am</h1>
-                <span className="font-serif font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white">
+                <span className="font-serif font-bold  bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-white">
                   RomeoGFX
                 </span>
               </div>
