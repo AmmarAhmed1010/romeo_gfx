@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 import Image from 'next/image'; // Import Next.js Image component
+import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 const Page = () => { // Component name should be capitalized
     useEffect(() => {
@@ -16,9 +18,19 @@ const Page = () => { // Component name should be capitalized
     const zombieImages = Array.from({ length: 18 }, (_, i) => `/zombie/zombie${i + 1}.png`);
 
     return (
-        <div className="w-full bg-black px-4 md:px-8 lg:px-20 py-20">
+        <div className="bg-black lg:px-8 md:px-16">
+            <Link href="/">
+            <div
+                data-aos="zoom-in"
+                className="text-white w-full cursor-pointer text-3xl 2xl:text-5xl font-extrabold font-serif flex justify-center py-4"
+            >
+                <h1>Romeo</h1>
+                <span className="text-red-700">GFX</span>
+            </div>
+            </Link>
+
             {/* Heading Section */}
-            <div data-aos="zoom-in" className="heading w-full flex justify-center font-serif items-center md:text-4xl text-3xl font-bold text-white mb-12">
+            <div data-aos="zoom-in" className="heading w-full flex justify-center font-serif items-center md:text-4xl text-3xl font-bold text-white mb-8">
                 <h1 className="mr-2">Zombie</h1>
                 <span className="text-green-500">Thumbnails</span>
             </div>
@@ -38,6 +50,7 @@ const Page = () => { // Component name should be capitalized
                     </div>
                 ))}
             </div>
+            <Footer/>
         </div>
     );
 };

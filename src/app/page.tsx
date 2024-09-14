@@ -12,11 +12,10 @@ export default function Home() {
   return (
 
     <>
-    
       <BgNew/>
-      <ZombieThumbnail/>
-      <Featuring/>
       <MultipleCards/>
+      <Featuring/>
+      <ZombieThumbnail/>
       <NewPricingSection/>
       <CardsDesign/>
       <Footer/>
