@@ -15,7 +15,8 @@ const BgNew = () => {
     useEffect(() => {
         AOS.init({
           duration: 1000, // Duration of the animation
-           // Animation should happen only once
+          once: false,    // Animation should trigger each time the element scrolls into view
+             // Offset to trigger animations earlier or later
         });
       }, []);
 

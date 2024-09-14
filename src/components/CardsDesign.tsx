@@ -8,7 +8,11 @@ const CardsDesign = () => {
   const contactMessage = "Hello, I'm interested in your services.";
 
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Initialize AOS with a 1-second animation
+    AOS.init({
+      duration: 1000, // Duration of the animation
+      once: false,    // Animation should trigger each time the element scrolls into view
+       // Offset to trigger animations earlier or later
+    });
   }, []);
 
   return (

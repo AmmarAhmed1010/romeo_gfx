@@ -13,13 +13,13 @@ const ZombieThumbnail = () => {
     }, []);
 
     return (
-        <div className="w-full bg-black px-4 md:px-8 lg:px-20 py-10">
+        <div className="w-full h-auto bg-black px-4 md:px-8 lg:px-20 py-10">
             <div data-aos="zoom-in" className="heading w-full flex justify-center items-center md:text-4xl text-3xl font-bold text-white font-serif mb-12">
                 <h1 className="mr-2">Zombie</h1>
                 <span className="text-red-700">Thumbnails</span>
             </div>
             <div className="content grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-                <div data-aos="fade-right" className="w-full h-auto shadow-lg">
+                <div data-aos="fade-up-right" className="w-full h-auto shadow-lg">
                     <Image
                         src="/zombie/zombie1.png"
                         alt="Thumbnail 1"
