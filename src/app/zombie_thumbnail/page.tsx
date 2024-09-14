@@ -18,7 +18,7 @@ const Page = () => { // Component name should be capitalized
     const zombieImages = Array.from({ length: 18 }, (_, i) => `/zombie/zombie${i + 1}.png`);
 
     return (
-        <div className="bg-black h-full md:h-full lg:h-screen px-4 lg:px-8 md:px-16">
+        <div className="bg-black  px-4 lg:px-8 md:px-16">
             <Link href="/">
             <div
                 data-aos="zoom-in"
