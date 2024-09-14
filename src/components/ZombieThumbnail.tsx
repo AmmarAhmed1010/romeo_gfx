@@ -18,9 +18,8 @@ const ZombieThumbnail = () => {
                 <h1 className="mr-2">Zombie</h1>
                 <span className="text-red-700">Thumbnails</span>
             </div>
-
             <div className="content grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-                <div data-aos="fade-up-right" className="w-full h-auto shadow-lg">
+                <div data-aos="fade-right" className="w-full h-auto shadow-lg">
                     <Image
                         src="/zombie/zombie1.png"
                         alt="Thumbnail 1"

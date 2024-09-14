@@ -22,7 +22,7 @@ const BgNew = () => {
     const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
     const contactMessage = "Hello, I'm interested in your services.";
     return (
-        <div className="bg-black md:h-screen h-full overflow-hidden lg:px-8  md:px-16">
+        <div className="bg-black md:h-full lg:h-screen h-full overflow-hidden lg:px-8  md:px-16">
 
             {/* Header */}
 
