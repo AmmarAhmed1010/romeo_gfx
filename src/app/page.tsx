@@ -6,12 +6,15 @@ import NewPricingSection from "@/components/NewPricingSection";
 import CardsDesign from "@/components/CardsDesign";
 import Featuring from "@/components/Featuring";
 import MultipleCards from "@/components/MultipleCards";
+import ZombieThumbnail from "@/components/ZombieThumbnail";
 
 export default function Home() {
   return (
 
     <>
+    
       <BgNew/>
+      <ZombieThumbnail/>
       <Featuring/>
       <MultipleCards/>
       <NewPricingSection/>
