@@ -4,7 +4,7 @@ import { IconArrowNarrowLeft, IconArrowNarrowRight, IconX } from "@tabler/icons-
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
-import { useOutsideClick } from "../hooks/use-outside-click";
+import { useOutsideClick } from "@/hooks/use-outside-click";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -46,19 +46,6 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
       setCanScrollRight(scrollLeft < scrollWidth - clientWidth);
     }
   };
-
-  const scrollLeft = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
-    }
-  };
-
-  const scrollRight = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
-    }
-  };
-
   const handleCardClose = (index: number) => {
     if (carouselRef.current) {
       const cardWidth = isMobile() ? 230 : 384;
@@ -76,14 +63,14 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
   return (
     <CarouselContext.Provider value={{ onCardClose: handleCardClose, currentIndex }}>
-      <div className="relative w-full">
+      <div className="relative bg-black w-full">
         <div
-          className="flex w-full overflow-x-scroll py-10 md:py-20 scroll-smooth [scrollbar-width:none] relative"
+          className="flex w-full overflow-x-scroll scroll-smooth [scrollbar-width:none] relative"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
           <div className="absolute right-0 top-0 h-full w-[5%] bg-gradient-to-l from-transparent to-black"></div>
-          <div className="flex flex-row gap-4 pl-4 mx-auto">
+          <div className="flex bg-black flex-row gap-4 pl-4 mx-auto">
             {items.map((item, index) => (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -97,28 +84,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
             ))}
           </div>
         </div>
-        <div className="flex justify-between px-4 absolute top-1/2 transform -translate-y-1/2 w-full">
-          <button
-            className={cn(
-              "relative h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center transition-transform duration-300 ease-in-out hover:bg-gray-200 focus:outline-none",
-              !canScrollLeft && "opacity-50 cursor-not-allowed"
-            )}
-            onClick={scrollLeft}
-            disabled={!canScrollLeft}
-          >
-            <IconArrowNarrowLeft className="h-6 w-6 text-black" />
-          </button>
-          <button
-            className={cn(
-              "relative h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center transition-transform duration-300 ease-in-out hover:bg-gray-200 focus:outline-none",
-              !canScrollRight && "opacity-50 cursor-not-allowed"
-            )}
-            onClick={scrollRight}
-            disabled={!canScrollRight}
-          >
-            <IconArrowNarrowRight className="h-6 w-6 text-black" />
-          </button>
-        </div>
+     
       </div>
     </CarouselContext.Provider>
   );

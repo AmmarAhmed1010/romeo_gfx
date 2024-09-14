@@ -20,13 +20,13 @@ const MultipleCards = () => {
   ));
 
   return (
-    <div  className="w-full px-4 md:px-8 lg:px-16 bg-black">
-      <h2 data-aos="zoom-in" className="text-3xl md:text-4xl font-bold text-red-700 font-serif text-center tracking-wide mb-8">
+    <div  className="w-full px-4 md:px-8 lg:px-16  bg-black">
+      <h2 data-aos="zoom-in" className="text-3xl md:text-4xl font-bold text-red-700 font-serif pb-10 text-center tracking-wide">
         <span className="text-white">Explore</span> My <span className="text-white">Media</span> Collection
       </h2>
-      <div data-aos="fade-up-right">
+      
       <Carousel  items={cards} />
-      </div>
+      
         
     </div>
   );
