@@ -1,10 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState, createContext, useContext } from "react";
-import {
-  IconArrowNarrowLeft,
-  IconArrowNarrowRight,
-  IconX,
-} from "@tabler/icons-react";
+import { IconArrowNarrowLeft, IconArrowNarrowRight, IconX } from "@tabler/icons-react";
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
@@ -25,15 +21,15 @@ type Card = {
 export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
   currentIndex: number;
-}>({
+}>( {
   onCardClose: () => {},
   currentIndex: 0,
 });
 
 export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
-  const carouselRef = React.useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = React.useState(false);
-  const [canScrollRight, setCanScrollRight] = React.useState(true);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -76,41 +72,47 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     }
   };
 
-  const isMobile = () => window && window.innerWidth < 768;
+  const isMobile = () => window.innerWidth < 768;
 
   return (
     <CarouselContext.Provider value={{ onCardClose: handleCardClose, currentIndex }}>
       <div className="relative w-full">
         <div
-          className="flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-20 scroll-smooth [scrollbar-width:none]"
+          className="flex w-full overflow-x-scroll py-10 md:py-20 scroll-smooth [scrollbar-width:none] relative"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
-          <div className="absolute right-0 z-[1000] h-auto w-[5%] bg-gradient-to-l"></div>
-          <div className="flex flex-row justify-start gap-4 pl-4 mx-auto">
+          <div className="absolute right-0 top-0 h-full w-[5%] bg-gradient-to-l from-transparent to-black"></div>
+          <div className="flex flex-row gap-4 pl-4 mx-auto">
             {items.map((item, index) => (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 * index }}
                 key={"card" + index}
-                className="last:pr-[5%] md:last:pr-[33%] rounded-3xl"
+                className="rounded-3xl flex-shrink-0"
               >
                 {item}
               </motion.div>
             ))}
           </div>
         </div>
-        <div className="flex justify-end gap-2 mr-10">
+        <div className="flex justify-between px-4 absolute top-1/2 transform -translate-y-1/2 w-full">
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className={cn(
+              "relative h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center transition-transform duration-300 ease-in-out hover:bg-gray-200 focus:outline-none",
+              !canScrollLeft && "opacity-50 cursor-not-allowed"
+            )}
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
             <IconArrowNarrowLeft className="h-6 w-6 text-black" />
           </button>
           <button
-            className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center disabled:opacity-50"
+            className={cn(
+              "relative h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center transition-transform duration-300 ease-in-out hover:bg-gray-200 focus:outline-none",
+              !canScrollRight && "opacity-50 cursor-not-allowed"
+            )}
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
@@ -160,7 +162,7 @@ export const Card = ({
     <>
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 h-screen z-50 overflow-auto">
+          <div className="fixed inset-0 z-50 overflow-auto">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -173,10 +175,10 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="max-w-5xl md:mx-auto bg-red-800 h-fit z-[60] my-10 p-4 md:p-10 rounded-3xl font-sans relative"
+              className="max-w-5xl md:mx-auto bg-red-800 h-fit z-50 my-10 p-4 md:p-10 rounded-3xl relative"
             >
               <button
-                className="sticky top-[50px] h-10 w-10 p-2 right-0 ml-auto bg-white rounded-full flex items-center justify-center"
+                className="absolute top-4 right-4 h-10 w-10 p-2 bg-white rounded-full flex items-center justify-center"
                 onClick={handleClose}
               >
                 <IconX className="h-10 w-10 text-black" />
