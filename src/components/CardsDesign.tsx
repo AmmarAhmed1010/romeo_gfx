@@ -20,8 +20,8 @@ const CardsDesign = () => {
       <div
         data-aos="zoom-in"
         className='text-center'>
-        <h2 className="text-4xl font-bold text-white font-serif mb-8 text-center">
-          Our <span className="text-red-700">Pricing</span> Plan
+        <h2 className="text-3xl md:text-4xl font-medium font-serif mb-8 text-white text-center">
+          Our <span className="text-red-700 text-3xl md:text-4xl font-medium font-serif">Pricing</span> Plan
         </h2>
       </div>
 

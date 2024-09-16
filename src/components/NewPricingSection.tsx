@@ -29,8 +29,8 @@ const NewPricingSection = () => {
       <div className="mx-auto font-serif">
         {/* Section heading */}
         <div data-aos="zoom-in">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center tracking-wide">
-            Our <span className="text-red-600">Price</span> List
+          <h2 className="text-3xl md:text-4xl font-medium font-serif text-white mb-12 text-center tracking-wide">
+            Our <span className="text-red-600 text-3xl md:text-4xl font-medium font-serif">Price</span> List
           </h2>
         </div>
 
