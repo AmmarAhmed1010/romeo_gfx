@@ -1,20 +1,18 @@
-"use client";
-
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
-import Image from 'next/image'; 
+import Image from 'next/image'; // Import Next.js Image component
 
-const Page = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 500, // Duration of the animation
-                 // Animation should happen only once
-        });
-    }, []);
+const Zomb = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of the animation
+      once: true,     // Animation happens only once
+    });
+  }, []);
 
-    return (
-        <div className="w-full bg-black px-4 pb-8 md:px-8 lg:px-20 pt-10">
+  return (
+    <div className="w-full bg-black px-4 pb-10 md:px-8 lg:px-20 pt-10">
       {/* Heading Section */}
       <div data-aos="zoom-in" className="heading w-full flex justify-center items-center text-white mb-12">
         <h1 className="mr-2 text-3xl md:text-4xl font-medium font-serif">Zombie</h1>
@@ -23,10 +21,10 @@ const Page = () => {
 
       {/* Image Grid Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  md:gap-8">
-        {[...Array(18)].map((_, index) => (
-          <div key={index}>
+        {[...Array(15)].map((_, index) => (
+          <div key={index} data-aos="fade-right">
             <Image
-             src={`/zombie/zombie${index + 1}.png`}
+              src={`/gaming${index + 1}.png`}
               alt={`Zombie thumbnail ${index + 1}`}
               height={500}
               width={500}
@@ -36,7 +34,7 @@ const Page = () => {
         ))}
       </div>
     </div>
-    );
-};
+  );
+}
 
-export default Page;
+export default Zomb;
