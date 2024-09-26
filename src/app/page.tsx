@@ -7,7 +7,7 @@ import CardsDesign from "@/components/CardsDesign";
 import Featuring from "@/components/Featuring";
 import MultipleCards from "@/components/MultipleCards";
 import ZombieThumbnail from "@/components/ZombieThumbnail";
-import Zomb from "@/components/Zomb";
+
 
 export default function Home() {
   return (

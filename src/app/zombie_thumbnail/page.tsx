@@ -26,11 +26,7 @@ const Page = () => {
                 {[...Array(18)].map((_, index) => (
                     <div
                         key={index}
-                        data-aos={
-                            index % 2 === 0
-                                ? 'fade-up' // Apply 'fade-right' for even-indexed images
-                                : 'fade-right'  // Apply 'fade-left' for odd-indexed images
-                        }
+                      
                         className="rounded-xl"
                     >
                         <Image

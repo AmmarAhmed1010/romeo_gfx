@@ -30,7 +30,7 @@ const ZombieThumbnail = () => {
                 <h1 className="mr-2 text-3xl md:text-4xl font-medium font-serif">Zombie</h1>
                 <span className="text-red-700 text-3xl md:text-4xl font-medium font-serif">Thumbnails</span>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6  md:gap-8">
         {[...Array(6)].map((_, index) => (
           <div key={index}>
             <Image
@@ -38,7 +38,7 @@ const ZombieThumbnail = () => {
               alt={`Zombie thumbnail ${index + 1}`}
               height={500}
               width={500}
-              className="rounded-xl object-cover w-full h-auto" // Make sure it's responsive
+              className="rounded-xl object-cover w-full h-auto border-gradient-animation3" // Make sure it's responsive
             />
           </div>
         ))}

@@ -32,40 +32,19 @@ const Featuring = () => {
                 <span className="text-red-700 text-3xl md:text-4xl font-medium font-serif">Thumbnails</span>
             </div>
 
-            <div className="content grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-                {images.slice(0, 8).map((src, index) => (
-                    <div
-                        key={index}
-                        data-aos="fade-up-right"
-                        className="w-full h-auto shadow-lg"
-                    >
-                        <div className="relative w-full h-0 pb-[50%] overflow-hidden">
-                            <Image
-                                src={src}
-                                alt={`Thumbnail ${index + 1}`}
-                                fill // Replaces layout="fill"
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Add sizes prop
-                                className="border-gradient-animation3" // Use Tailwind's object-cover
-                            />
-                        </div>
-                    </div>
-                ))}
-                {/* Conditionally render the 9th image only for medium and larger screens */}
-                <div
-                    data-aos="fade-up-right"
-                    className="w-full h-auto shadow-lg hidden md:block"
-                >
-                    <div className="relative w-full h-0 pb-[50%] overflow-hidden">
-                        <Image
-                            src={images[8]}
-                            alt="Thumbnail 9"
-                            fill
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            className="border-gradient-animation3"
-                        />
-                    </div>
-                </div>
-            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6  md:gap-8">
+        {[...Array(6)].map((_, index) => (
+          <div key={index}>
+            <Image
+             src={`/feature/feature${index + 1}.png`}
+              alt={`Zombie thumbnail ${index + 1}`}
+              height={500}
+              width={500}
+              className="rounded-xl object-cover w-full h-auto border-gradient-animation3" // Make sure it's responsive
+            />
+          </div>
+        ))}
+      </div>
         </div>
     );
 };
