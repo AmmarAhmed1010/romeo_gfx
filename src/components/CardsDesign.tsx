@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import { motion } from 'framer-motion'; // Import framer-motion
 
 const CardsDesign = () => {
   const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
@@ -34,12 +33,8 @@ const CardsDesign = () => {
 
       <div className="flex flex-col md:flex-row font-serif justify-center items-center space-y-8 md:space-y-0 md:space-x-4 p-4">
         {plans.map((plan, index) => (
-          <motion.div
+          <div
             key={index}
-            initial={{ opacity: 0, y: 50 }} // Start state
-            whileInView={{ opacity: 1, y: 0 }} // End state
-            transition={{ duration: 0.5 }} // Animation duration
-            viewport={{ once: true }} // Animation triggers once when in view
             className="border-gradient-animation shadow-lg rounded-3xl p-6 max-w-sm w-full"
           >
             <div className="content2">
@@ -76,7 +71,7 @@ const CardsDesign = () => {
                 </a>
               </div>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

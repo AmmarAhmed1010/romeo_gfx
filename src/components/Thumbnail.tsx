@@ -28,8 +28,8 @@ const Thumbnail = () => {
 
             {/* Heading for the Zombie Thumbnails section */}
             <div className="heading w-full flex justify-center items-center text-white mt-16 mb-12">
-                <h1 className="mr-2 text-3xl md:text-4xl font-medium font-serif">Featured</h1>
-                <span className="text-red-700 text-3xl md:text-4xl font-medium font-serif">Zombie Thumbnails</span>
+                <h1 className="mr-2 text-3xl md:text-4xl font-medium font-serif">Zombie</h1>
+                <span className="text-red-700 text-3xl md:text-4xl font-medium font-serif">Thumbnails</span>
             </div>
 
             {/* Zombie Thumbnails */}
