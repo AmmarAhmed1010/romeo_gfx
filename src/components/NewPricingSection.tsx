@@ -5,14 +5,14 @@ import 'aos/dist/aos.css'; // Import AOS styles
 
 const NewPricingSection = () => {
   const items = [
-    { title: "Thumbnail Design", price: "250", description: "Thumbnails for your videos." },
-    { title: "Logo Design", price: "400", description: "Professional logos for your brand." },
-    { title: "Banner Design", price: "450", description: "Custom banners for any platform." },
-    { title: "Overlay Design", price: "500 / 1500", description: "Perfect overlays for your streams." },
-    { title: "Posters", price: "700", description: "Stunning posters for promotions." },
+    { title: "Thumbnail Design", price: "300", description: "Thumbnails for your videos." },
+    { title: "Logo Design", price: "500", description: "Professional logos for your brand." },
+    { title: "Banner Design", price: "600", description: "Custom banners for any platform." },
+    { title: "Overlay Design", price: "800 / 1800", description: "Perfect overlays for your streams." },
+    { title: "Posters", price: "1000", description: "Stunning posters for promotions." },
     { title: "FB Banner", price: "500", description: "Custom Facebook banners." },
     { title: "Intro / Outro", price: "800", description: "Professional video intros/outros." },
-    { title: "Jersey Shirts", price: "1200", description: "Custom jerseys for your team." },
+    { title: "Jersey Shirts", price: "2000", description: "Custom jerseys for your team." },
   ];
 
   // Initialize AOS

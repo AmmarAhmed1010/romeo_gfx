@@ -12,19 +12,6 @@ const Featuring = () => {
         });
         AOS.refresh(); // Refresh AOS to handle potential issues with dynamic content
     }, []);
-
-    const images = [
-        "/feature/feature1.png",
-        "/feature/feature11.png",
-        "/feature/feature3.png",
-        "/feature/feature4.png",
-        "/feature/feature5.png",
-        "/feature/feature12.png",
-        "/feature/feature7.png",
-        "/feature/feature2.png",
-        "/feature/feature9.png"
-    ];
-
     return (
         <div className="w-full bg-black px-4 md:px-8 lg:px-20 py-10">
             <div data-aos="zoom-in" className="heading w-full flex justify-center items-center text-white mb-12">

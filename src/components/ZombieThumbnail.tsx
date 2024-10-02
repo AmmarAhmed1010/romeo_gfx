@@ -10,22 +10,10 @@ const ZombieThumbnail = () => {
             duration: 1000, // Duration of the animation
             once: true,     // Animation should happen only once
         });
+        AOS.refresh(); // Refresh AOS animations
     }, []);
-
-    const images = [
-        "/zombie/zombie1.png",
-        "/zombie/zombie4.png",
-        "/zombie/zombie8.png",
-        "/zombie/zombie2.png",
-        "/zombie/zombie10.png",
-        "/zombie/zombie15.png",
-        "/zombie/zombie6.png",
-        "/zombie/zombie16.png",
-        "/zombie/zombie12.png"
-    ];
-
     return (
-        <div className="w-full bg-black px-4 md:px-8 lg:px-20 pt-10">
+        <div className="w-full h-screen bg-black px-4 md:px-8 lg:px-20 pt-10">
             <div data-aos="zoom-in" className="heading w-full flex justify-center items-center text-white mb-12">
                 <h1 className="mr-2 text-3xl md:text-4xl font-medium font-serif">Zombie</h1>
                 <span className="text-red-700 text-3xl md:text-4xl font-medium font-serif">Thumbnails</span>
@@ -45,7 +33,7 @@ const ZombieThumbnail = () => {
       </div>
 
             {/* Button to view all thumbnails */}
-            <div className="w-full flex justify-center mt-12">
+            <div className="w-full flex justify-center mt-6">
                 <Link href="/zombie_thumbnail">
                     <div className="bg-red-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-600 transition-all">
                         View All Thumbnails
