@@ -7,6 +7,7 @@ import CardsDesign from "@/components/CardsDesign";
 import Featuring from "@/components/Featuring";
 import MultipleCards from "@/components/MultipleCards";
 import ZombieThumbnail from "@/components/ZombieThumbnail";
+import ZombieNew from "@/components/ZombieNew";
 
 
 export default function Home() {
@@ -16,8 +17,10 @@ export default function Home() {
       {/* <Zomb/> */}
       <BgNew/>
       <MultipleCards/>
-      <Featuring/>
-      {/* <ZombieThumbnail/> */}
+      <ZombieNew/>
+     {/* <ZombieThumbnail/>
+      <Featuring/> */}
+      
       <NewPricingSection/>
       <CardsDesign/>
       <Footer/>

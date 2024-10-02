@@ -30,6 +30,7 @@ const Page = () => {
                         className="rounded-xl"
                     >
                         <Image
+                        
                             src={`/zombie/zombie${index + 1}.png`}
                             alt={`Zombie thumbnail ${index + 1}`}
                             height={500}
