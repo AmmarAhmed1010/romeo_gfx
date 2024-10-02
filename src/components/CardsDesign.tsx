@@ -9,11 +9,11 @@ const CardsDesign = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of the animation
-      once: false,    // Animation should trigger each time the element scrolls into view
-       // Offset to trigger animations earlier or later
+        duration: 1000, // Duration of the animation
+        once: true,     // Animation should happen only once
     });
-  }, []);
+    AOS.refresh(); // Refresh AOS animations
+}, []);
 
   return (
     <div className='flex bg-black flex-col w-full'>

@@ -10,7 +10,7 @@ const NewPricingSection = () => {
     { title: "Banner Design", price: "600", description: "Custom banners for any platform." },
     { title: "Overlay Design", price: "800 / 1800", description: "Perfect overlays for your streams." },
     { title: "Posters", price: "1000", description: "Stunning posters for promotions." },
-    { title: "FB Banner", price: "500", description: "Custom Facebook banners." },
+    { title: "FB Banner", price: "800", description: "Custom Facebook banners." },
     { title: "Intro / Outro", price: "800", description: "Professional video intros/outros." },
     { title: "Jersey Shirts", price: "2000", description: "Custom jerseys for your team." },
   ];
@@ -18,14 +18,14 @@ const NewPricingSection = () => {
   // Initialize AOS
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of the animation
-      once: false,    // Animation should trigger each time the element scrolls into view
-       // Offset to trigger animations earlier or later
+        duration: 1000, // Duration of the animation
+        once: true,     // Animation should happen only once
     });
-  }, []);
+    AOS.refresh(); // Refresh AOS animations
+}, []);
 
   return (
-    <section className="w-full h-full px-4 md:px-8 lg:px-20 py-10 bg-black">
+    <section className="w-full px-4 md:px-8 lg:px-20 py-10 bg-black">
       <div className="mx-auto font-serif">
         {/* Section heading */}
         <div data-aos="zoom-in">
@@ -39,7 +39,7 @@ const NewPricingSection = () => {
           {items.map((item, index) => (
             <div
               key={index}
-              data-aos="fade-up-right" // AOS zoom-in-up effect
+               // AOS zoom-in-up effect
               className="border-gradient-animation text-center"
             >
               {/* Inner content container */}
