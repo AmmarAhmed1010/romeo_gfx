@@ -17,7 +17,7 @@ export default function Home() {
       {/* <Zomb/> */}
       <BgNew/>
       <MultipleCards/>
-      <Thumbnail/>      
+      {/* <Thumbnail/>       */}
       <NewPricingSection/>
       <CardsDesign/>
       <Footer/>
