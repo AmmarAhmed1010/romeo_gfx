@@ -26,7 +26,7 @@ const ThumbnailSection: React.FC<ThumbnailSectionProps> = ({ title, subtitle, im
             {/* Thumbnails Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
                 {[...Array(totalImages)].map((_, index) => (
-                    <div key={index} data-aos="fade-right" data-aos-delay={`${delayStart + index * 100}`}>
+                    <div key={index} data-aos-delay={`${delayStart + index * 100}`}>
                         <Image
                             src={`${imagesPath}${index + 1}.png`}
                             alt={`${title} thumbnail ${index + 1}`}
