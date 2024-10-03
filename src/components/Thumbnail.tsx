@@ -18,7 +18,7 @@ const ThumbnailSection: React.FC<ThumbnailSectionProps> = ({ title, subtitle, im
     return (
         <>
             {/* Section Heading */}
-            <div className="heading w-full flex justify-center items-center text-white my-10" data-aos="zoom-in">
+            <div className="heading w-full flex justify-center items-center text-white my-10">
                 <h1 className="mr-2 text-3xl md:text-4xl font-medium font-serif">{title}</h1>
                 <span className="text-red-700 text-3xl md:text-4xl font-medium font-serif">{subtitle}</span>
             </div>
@@ -48,7 +48,7 @@ const Thumbnail: React.FC = () => {
     }, []);
 
     return (
-        <div className="w-full bg-black px-4 md:px-8 lg:px-20 py-10">
+        <div className="w-full bg-black px-4 md:px-8 lg:px-20 py-8">
             {/* Featured Section */}
             <ThumbnailSection
                 title="Featured"
@@ -67,7 +67,7 @@ const Thumbnail: React.FC = () => {
             />
 
             {/* Link to View All Zombie Thumbnails */}
-            <div className="w-full flex justify-center mt-12" data-aos="zoom-in">
+            <div className="w-full flex justify-center mt-12">
                 <Link href="/zombie_thumbnail">
                     <div className="bg-red-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-600 transition-all">
                         View All Images
