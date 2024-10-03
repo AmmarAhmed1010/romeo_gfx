@@ -1,5 +1,8 @@
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const NewPricingSection = () => {
   const items = [
@@ -12,12 +15,16 @@ const NewPricingSection = () => {
     { title: "Intro / Outro", price: "800", description: "Professional video intros/outros." },
     { title: "Jersey Shirts", price: "2000", description: "Custom jerseys for your team." },
   ];
+  useEffect(() => {
+    AOS.init({ duration: 1000,  offset: 50 });
+    
+}, []);
 
   return (
     <section className="w-full h-full px-4 md:px-8 lg:px-20 py-10 bg-black">
-      <div className="mx-auto font-serif">
+      <div  className="mx-auto font-serif">
         {/* Section heading */}
-        <h2 className="text-3xl md:text-4xl font-medium font-serif text-white mb-12 text-center tracking-wide">
+        <h2 data-aos="zoom-in" className="text-3xl md:text-4xl font-medium font-serif text-white mb-12 text-center tracking-wide">
           Our <span className="text-red-600 text-3xl md:text-4xl font-medium font-serif">Price</span> List
         </h2>
 
@@ -25,6 +32,7 @@ const NewPricingSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {items.map((item, index) => (
             <div
+            data-aos="fade-right"
               key={index}
               className="border-gradient-animation text-center"
             >

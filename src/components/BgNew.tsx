@@ -5,28 +5,29 @@ import Image from "next/image";
 import { motion } from 'framer-motion';
 import AOS from 'aos';
 import { FlipWords } from "./ui/flip-words";
-import 'aos/dist/aos.css'; // Import AOS styles
+import 'aos/dist/aos.css';
 
-const BgNew = () => {
+// Define a TypeScript type for the component (optional if not using props)
+const BgNew: React.FC = () => {
 
-    const words = ["Animation", "Styling"];
+    // Words for flip effect
+    const words: string[] = ["Animation", "Styling"];
 
-    // Initialize AOS
-    useEffect(() => {
-        AOS.init({
-          duration: 1000, // Duration of the animation
-          once: false,    // Animation should trigger each time the element scrolls into view
-             // Offset to trigger animations earlier or later
-        });
-      }, []);
-
+    // WhatsApp details
     const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
     const contactMessage = "Hello, I'm interested in your services.";
+
+    // Initialize AOS for animations
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Duration of the animation
+            once: false,    // Trigger animation each time the element scrolls into view
+        });
+    }, []);
+
     return (
-        <div className="bg-black md:h-full lg:h-screen h-full overflow-hidden lg:px-8  md:px-16">
-
+        <div className="bg-black md:h-full lg:h-screen h-full overflow-hidden lg:px-8 md:px-16">
             {/* Header */}
-
             <div
                 data-aos="zoom-in"
                 className="text-white w-full text-3xl 2xl:text-5xl font-extrabold font-serif flex justify-center py-4"
@@ -34,9 +35,11 @@ const BgNew = () => {
                 <h1>Romeo</h1>
                 <span className="text-red-700">GFX</span>
             </div>
-            {/* Main */}
+
+            {/* Main Content */}
             <div className="flex text-center flex-col-reverse lg:flex-row 2xl:h-full lg:px-10 2xl:pb-20 2xl:flex-row 2xl:items-center">
-                {/* DivLeft */}
+                
+                {/* Left Column */}
                 <div className="2xl:gap-3 2xl:w-1/2 lg:w-1/2 flex flex-col py-4 px-4">
                     <div
                         data-aos="fade-up-right"
@@ -48,21 +51,20 @@ const BgNew = () => {
                         </span>
                     </div>
 
+                    {/* FlipWords animation */}
                     <div data-aos="fade-up-right">
-                        <div
-                            className="text-xl 2xl:text-5xl lg:text-3xl font-serif text-white"
-                        >
+                        <div className="text-xl 2xl:text-5xl lg:text-3xl font-serif text-white">
                             I specialize in <FlipWords words={words} /> <br />
                         </div>
                     </div>
-                    <div
-                        data-aos="fade-up-right"
-                    >
+
+                    {/* Additional Generated Text */}
+                    <div data-aos="fade-up-right">
                         <GenerateText />
                     </div>
-                    <div
-                        className="my-4"
-                    >
+
+                    {/* Hire Me Button */}
+                    <div className="my-4">
                         <a
                             href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(contactMessage)}`}
                             target="_blank"
@@ -73,12 +75,13 @@ const BgNew = () => {
                         </a>
                     </div>
                 </div>
-                {/* DivRight */}
+
+                {/* Right Column with Image */}
                 <div
                     data-aos="fade-right"
-                    className="w-full lg:w-1/2  b md:justify-center py-2 pb-2 overflow-hidden"
+                    className="w-full lg:w-1/2 b md:justify-center py-2 pb-2 overflow-hidden"
                 >
-                    <div className="mx-auto w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] 2xl:w-[400px] 2xl:h-[400px]  relative">
+                    <div className="mx-auto w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] 2xl:w-[400px] 2xl:h-[400px] relative">
                         <Image
                             src="/imgprofile.png"
                             alt="Profile Image"
@@ -93,6 +96,6 @@ const BgNew = () => {
             </div>
         </div>
     );
-}
+};
 
 export default BgNew;

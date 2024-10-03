@@ -1,9 +1,11 @@
-"use client";
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const CardsDesign = () => {
   const whatsappNumber = '03158552233'; // Replace with your WhatsApp number
   const contactMessage = "Hello, I'm interested in your services.";
+  
 
   const plans = [
     {
@@ -23,9 +25,14 @@ const CardsDesign = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({ duration: 1000,  offset: 50 });
+    
+}, []);
+
   return (
     <div className='flex bg-black flex-col w-full'>
-      <div className='text-center'>
+      <div data-aos="zoom-in" className='text-center'>
         <h2 className="text-3xl md:text-4xl font-medium font-serif mb-8 text-white text-center">
           Our <span className="text-red-700 text-3xl md:text-4xl font-medium font-serif">Pricing</span> Plan
         </h2>
@@ -34,6 +41,7 @@ const CardsDesign = () => {
       <div className="flex flex-col md:flex-row font-serif justify-center items-center space-y-8 md:space-y-0 md:space-x-4 p-4">
         {plans.map((plan, index) => (
           <div
+          data-aos="fade-right"
             key={index}
             className="border-gradient-animation shadow-lg rounded-3xl p-6 max-w-sm w-full"
           >
