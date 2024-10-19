@@ -24,9 +24,13 @@ const ThumbnailSection: React.FC<ThumbnailSectionProps> = ({ title, subtitle, im
             </div>
 
             {/* Thumbnails Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
                 {[...Array(totalImages)].map((_, index) => (
-                    <div key={index} data-aos-delay={`${delayStart + index * 100}`}>
+                    <div
+                        key={index}
+                        data-aos="fade-up" // Adding the AOS animation type
+                        data-aos-delay={`${delayStart + index * 100}`} // Staggered delay for each image
+                    >
                         <Image
                             src={`${imagesPath}${index + 1}.png`}
                             alt={`${title} thumbnail ${index + 1}`}
@@ -43,12 +47,16 @@ const ThumbnailSection: React.FC<ThumbnailSectionProps> = ({ title, subtitle, im
 
 const Thumbnail: React.FC = () => {
     useEffect(() => {
-        AOS.init({ duration: 1000,  offset: 50 });
-        
+        AOS.init({
+            duration: 1000, // Animation duration
+            offset: 50, // Offset to trigger animations earlier
+            easing: 'ease-in-out', // Smooth animation easing
+            once: true, // Animation only runs once
+        });
     }, []);
 
     return (
-        <div className="w-full bg-black px-4 md:px-8 lg:px-20 py-8">
+        <div className="w-full  px-4 md:px-8 lg:px-20 py-8">
             {/* Featured Section */}
             <ThumbnailSection
                 title="Featured"
