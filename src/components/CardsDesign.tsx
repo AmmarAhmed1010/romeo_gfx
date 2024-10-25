@@ -15,12 +15,12 @@ const CardsDesign = () => {
     },
     {
       title: 'Standard Plan',
-      price: '2599',
+      price: '2999',
       features: ['2 HD Thumbnail', '1 Logo', '1 Banner', '1 Professional Animated Overlay'],
     },
     {
       title: 'Premium Plan',
-      price: '2999',
+      price: '3599',
       features: ['3 HD Thumbnail', '1 Logo', '1 Banner', '1 Professional Overlay'],
     },
   ];
